@@ -1,0 +1,17 @@
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1.5rem;
+    font-size: 1.25rem;
+    align-items: center;
+    justify-content: space-around;
+    color: #505050;
+  }
+
+  .nav img {
+    height:12rem;
+  }
+
+  
