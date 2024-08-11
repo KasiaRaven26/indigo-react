@@ -1,19 +1,21 @@
-import './App.css'
-import { Header } from './components/header'
-import { Footer } from './components/ui/footer'
-import { Projects } from './pages/Projects'
-function App() {
+/** @format */
 
+import "./App.css";
+import { Header } from "./components/ui/header";
+import { Footer } from "./components/ui/footer";
+import { Overlay } from "./components/ui/overlay";
+function App() {
   return (
     <>
-    <Header></Header>
-    <img id="background-image" src="./images/backgroundpicture.jpg"></img>
-    <Footer></Footer>
-
-    
-     Indigo react
+      <div className="hero">
+        <div className="hero-contents">
+          <Header></Header>
+          <Overlay />
+        </div>
+      </div>
+      <Footer></Footer>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
