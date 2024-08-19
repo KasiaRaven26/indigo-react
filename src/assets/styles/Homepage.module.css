@@ -1,0 +1,20 @@
+.paragraph {
+  color: #505050;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.leftArrowSvg {
+  height: 50px;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}

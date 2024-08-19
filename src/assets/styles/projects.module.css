@@ -1,0 +1,18 @@
+.projectsSection {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.projectsSection img {
+  width: 477px;
+  height: 322px;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px;
+  list-style-type: none;
+  padding: 0px;
+}

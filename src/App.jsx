@@ -1,20 +1,27 @@
 /** @format */
 
 import "./App.css";
-import { Header } from "./components/ui/header";
-import { Footer } from "./components/ui/footer";
-import { Overlay } from "./components/ui/overlay";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Homepage } from "./pages/Homepage";
+import { Projects } from "./pages/Projects";
+import { Contact } from "./pages/Contact";
+
 function App() {
   return (
-    <>
-      <div className="hero">
-        <div className="hero-contents">
-          <Header></Header>
-          <Overlay />
-        </div>
-      </div>
-      <Footer></Footer>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/contact" element={<Contact />} />
+        {/* <Route path="/client">
+          <Route index={true} element={<ClientHomePage />}></Route>
+          <Route path="your-messages" element={<YourMessages />} />
+          <Route path="cover-letter" element={<CoverLetter />} />
+          <Route path="your-details" element={<YourDetails />} />
+          <Route path="resume" element={<Resume />} />
+        </Route> */}
+      </Routes>
+    </BrowserRouter>
   );
 }
 

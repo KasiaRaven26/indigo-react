@@ -1,0 +1,33 @@
+.contactForm {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.contactForm form {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+input[type="text"] {
+  border: 1px solid;
+  border-radius: 4px;
+  height: 4rem;
+  width: 200%;
+  background-color: #d5dfe1;
+  color: #505050;
+}
+
+.contact {
+  height: 100vh;
+}
+#contactMain {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#contactMain p {
+  font-size: 20px;
+}

@@ -1,0 +1,10 @@
+.overlay {
+  border: 1px solid rgba(217, 217, 217, 0.78);
+  background-color: rgba(217, 217, 217, 0.78);
+  width: 50vh;
+  color: #505050;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}

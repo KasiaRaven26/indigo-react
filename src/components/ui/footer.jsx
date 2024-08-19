@@ -9,12 +9,8 @@ export function Footer() {
         <li>Privacy Policy</li>
         <li>Developed By</li>
         <li>
-          <img className={classes.aklogo} src="./images/aklogo.png"></img>{" "}
+          <img className={classes.aklogo} src="./images/aklogo.png"></img>
         </li>
-        <li>Contact</li>
-        <li>Request access</li>
-        <li>Sign in</li>
-        <li>GR/EU</li>
       </ul>
     </footer>
   );
