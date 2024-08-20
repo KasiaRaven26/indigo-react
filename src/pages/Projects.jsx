@@ -1,10 +1,32 @@
+/** @format */
+import { useState } from "react";
 import { Header } from "../components/ui/header";
 import { Footer } from "../components/ui/footer";
+import { Modal } from "../components/ui/modal";
 import classes from "../assets/styles/projects.module.css";
 export function Projects() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalContent, setModalContent] = useState("");
+
+  const openModal = (content) => {
+    setIsModalOpen(true);
+    setModalContent(content);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <div>
       <Header></Header>
+      {isModalOpen ? (
+        <Modal
+          isModalOpen={isModalOpen}
+          modalContent={modalContent}
+          onClose={closeModal}
+        />
+      ) : null}
       <section className={classes.projectsSection}>
         <h1>PROJECTS</h1>
         <ul>
@@ -35,6 +57,7 @@ export function Projects() {
           </li>
         </ul>
       </section>
+      <button onClick={openModal}>Toggle Modal</button>
       <Footer></Footer>
     </div>
   );
