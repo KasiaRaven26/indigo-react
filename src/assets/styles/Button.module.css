@@ -20,3 +20,7 @@
   justify-content: center;
   gap: 5px;
 }
+
+.wrapper:hover {
+  cursor: pointer;
+}

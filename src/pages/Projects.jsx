@@ -3,6 +3,9 @@ import { useState } from "react";
 import { Header } from "../components/ui/header";
 import { Footer } from "../components/ui/footer";
 import { Modal } from "../components/ui/modal";
+import ProjectsImageGrid from "src/components/projects-image-grid";
+import { propertData } from "src/data/projectsdata";
+
 import classes from "../assets/styles/projects.module.css";
 export function Projects() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -17,6 +20,11 @@ export function Projects() {
     setIsModalOpen(false);
   };
 
+  const modalImage = (imageChosen) => {
+    openModal(imageChosen);
+    console.log("The image chosen is:", imageChosen);
+  };
+
   return (
     <div>
       <Header></Header>
@@ -27,37 +35,10 @@ export function Projects() {
           onClose={closeModal}
         />
       ) : null}
+      <h1>PROJECTS</h1>
       <section className={classes.projectsSection}>
-        <h1>PROJECTS</h1>
-        <ul>
-          <li>
-            <img src="/images/projects/entrance-final.jpg"></img>
-          </li>
-          <li>
-            <img src="images/projects/dinning-final.jpg"></img>
-          </li>
-          <li>
-            <img src="images/projects/bathroom-final.jpg"></img>
-          </li>
-          <li>
-            <img src="images/projects/bedroom-final.jpg"></img>
-          </li>
-          <li>
-            <img src="images/projects/pool-final.jpg"></img>
-          </li>
-          <li>
-            <img src="images/projects/pool2-final.jpg"></img>
-          </li>
-          <li>
-            <img src="images/projects/living-final.jpg"></img>
-          </li>
-          <img src="images/projects/living-final2.jpg"></img>
-          <li>
-            <img src="images/projects/kitchen-final.jpg"></img>
-          </li>
-        </ul>
+        <ProjectsImageGrid modalImage={modalImage} projects={propertData} />
       </section>
-      <button onClick={openModal}>Toggle Modal</button>
       <Footer></Footer>
     </div>
   );
