@@ -22,7 +22,8 @@
    }
    .modalContent {
     border: 1px solid #fff;
-    width: 500px;
+    /* height: 80vh;
+    width: 90vh; */
     background-color: #fff;
     border-radius: 15px;
    }
@@ -37,7 +38,8 @@
     line-height: 28px;
    }
    .modalImage img {
-    width: 8rem;
+      height: 40vh;
+    width: auto;
    }
    .modalText {
     text-align: justify;
@@ -52,5 +54,8 @@
    }
 
    .modalMainContents {
-
+      display: flex;
+      flex-direction: column;
+      height: 90vh;
+      width: 90vh;
    }
