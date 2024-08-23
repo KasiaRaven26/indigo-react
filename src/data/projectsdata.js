@@ -4,46 +4,46 @@ export const propertData = [
   {
     id: 1,
     title: "A",
-    image: "/images/projects/entrance-final.jpg",
+    image: "/images/projects2/entrance.jpg",
   },
   {
     id: 2,
     title: "A",
-    image: "images/projects/dinning-final.jpg",
+    image: "images/projects2/dinning.jpg",
   },
   {
     id: 3,
     title: "A",
-    image: "images/projects/bathroom-final.jpg",
+    image: "images/projects2/bathroom.jpg",
   },
   {
     id: 4,
     title: "A",
-    image: "images/projects/bedroom-final.jpg",
+    image: "images/projects2/bedroom.jpg",
   },
   {
     id: 5,
     title: "A",
-    image: "images/projects/pool-final.jpg",
+    image: "images/projects2/pool.jpg",
   },
   {
     id: 6,
     title: "A",
-    image: "images/projects/pool2-final.jpg",
+    image: "images/projects2/csm-pool.jpg",
   },
   {
     id: 7,
     title: "A",
-    image: "images/projects/living-final.jpg",
+    image: "images/projects2/living-final.jpg",
   },
   {
     id: 8,
     title: "A",
-    image: "images/projects/living-final2.jpg",
+    image: "images/projects2/living.jpg",
   },
   {
     id: 9,
     title: "A",
-    image: "images/projects/kitchen-final.jpg",
+    image: "images/projects2/kitchen-final.jpg",
   },
 ];

@@ -11,8 +11,7 @@
 }
 input[type="text"] {
   border: 1px solid;
-  border-radius: 4px;
-  height: 4rem;
+  height: 8rem;
   width: 200%;
   background-color: #d5dfe1;
   color: #505050;

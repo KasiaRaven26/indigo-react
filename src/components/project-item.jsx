@@ -1,5 +1,5 @@
 /** @format */
-
+import classes from "../assets/styles/project-item.module.css";
 export default function ProjectItem({ image, modalImage }) {
   const handleClick = () => {
     modalImage(image);
@@ -7,7 +7,7 @@ export default function ProjectItem({ image, modalImage }) {
   return (
     <>
       <img
-        style={{ width: "477px", height: "322px" }}
+        className={classes.images}
         src={image}
         alt=""
         onClick={handleClick}

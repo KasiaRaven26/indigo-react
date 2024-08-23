@@ -10,15 +10,10 @@ export function Modal({ isModalOpen, modalContent, onClose }) {
     return null;
   }
   return (
-    <section className={classes.modal}>
-      <article className={classes.modalContent}>
-        <main className={classes.modalMainContents}>
-          <div className={classes.modalImage}>
-            <img src={modalContent} alt="image" />
-          </div>
-          <Button onClick={onClose}>Close</Button>
-        </main>
-      </article>
+    <section onClick={onClose} className={classes.modal}>
+      <div className={classes.modalImage}>
+        <img src={modalContent} alt="image" />
+      </div>
     </section>
   );
 }
