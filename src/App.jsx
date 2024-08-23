@@ -6,6 +6,7 @@ import { Homepage } from "./pages/Homepage";
 import { Projects } from "./pages/Projects";
 import { Contact } from "./pages/Contact";
 import { WhoWeArePage } from "./pages/WhoWeAre";
+import { WhatWeDo } from "./pages/WhatWeDo";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/who-we-are" element={<WhoWeArePage />} />
+        <Route path="/what-we-do" element={<WhatWeDo />} />
         {/* <Route path="/client">
           <Route index={true} element={<ClientHomePage />}></Route>
           <Route path="your-messages" element={<YourMessages />} />

@@ -24,3 +24,7 @@
 .wrapper:hover {
   cursor: pointer;
 }
+.link {
+  text-decoration: none;
+  color: #505050;
+}

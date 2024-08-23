@@ -7,9 +7,9 @@ export function Footer() {
       <ul>
         <li>COPYRIGHT © INDIGO 2024</li>
         <li>Privacy Policy</li>
-        <li>Developed By</li>
-        <li>
-          <img className={classes.aklogo} src="./images/aklogo.png"></img>
+        <li className={classes.flexlist}>
+          Developed By
+          <img className={classes.aklogo} src="./images/aklogo.png"></img>{" "}
         </li>
       </ul>
     </footer>

@@ -16,7 +16,7 @@ export function Homepage() {
       <section id="section-1">
         <img
           className="section-1-image"
-          src="../public/images/secondpicture.jpg"
+          src="../public/images/secondpicture2.jpg"
           alt=""
         />
         <div className={classes.paragraph}>
@@ -63,7 +63,7 @@ export function Homepage() {
             alt=""
           />
         </div>
-        <Button>ALL PROJECTS</Button>
+        <Button to="/projects">ALL PROJECTS</Button>
       </section>
 
       <Footer></Footer>

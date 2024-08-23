@@ -9,50 +9,50 @@ export function WhoWeArePage() {
       <main>
         <section className={classes.section1}>
           <h1>WHO WE ARE</h1>
-          <p>
+          <h3>
             INDIGO was established in 2021, seizes the opportune intersection of
             location and timing for real estate investment.
-          </p>
-          <p>
+          </h3>
+          <h3>
             Our mission is to streamline the investment journey for potential
             investors, saving them time, research efforts and the disappointment
             that can accompany such pursuits.
-          </p>
-          <p>
+          </h3>
+          <h3>
             With 20 years of accumulated local knowledge and expertise our
             founder guides you towards informed decisions and profitable
             ventures.
-          </p>
-          <Button>MORE</Button>
+          </h3>
+          <Button to="/">MORE</Button>
         </section>
-        <section>
-          <div>
-            <h1>EMMANUEL PETRAKIS</h1>
-            <p>director and founder</p>
-          </div>
+        <section className={classes.section2}>
           <div className={classes.emmanouel}>
+            <div>
+              <h1>EMMANUEL PETRAKIS</h1>
+              <p>director and founder</p>
+            </div>
             <img
               className={classes.image}
               src="../public/images/emmanouel.jpg"
               alt=""
             />
-            <div>
-              <p>
-                With more than 25 years of extensive local expertise spanning
-                diverse business sectors, I have cultivated a deep understanding
-                of the investment landscape. 
-              </p>
-              <p>
-                Over the last 18 years, my focus has extended to encompass real
-                estate.
-              </p>
-               
-              <p>
-                Having served as CEO in over 10 companies within this
-                quarter-century timeframe, I bring a wealth of knowledge and
-                experience to the table.
-              </p>
-            </div>
+          </div>
+          <div className={classes.paragraphContainer}>
+            <h3>
+              With more than 25 years of extensive local expertise spanning
+              diverse business sectors, I have cultivated a deep understanding
+              of the investment landscape. 
+            </h3>
+            <h3>
+              Over the last 18 years, my focus has extended to encompass real
+              estate.
+            </h3>
+             
+            <h3>
+              Having served as CEO in over 10 companies within this
+              quarter-century timeframe, I bring a wealth of knowledge and
+              experience to the table.
+            </h3>
           </div>
         </section>
       </main>
