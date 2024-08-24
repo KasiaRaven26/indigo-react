@@ -47,3 +47,11 @@ export const propertData = [
     image: "images/projects2/kitchen-final.jpg",
   },
 ];
+
+export const image = [
+  "/images/projects2/entrance.jpg",
+  "images/projects2/dinning.jpg",
+  "images/projects2/bathroom.jpg",
+  "images/projects2/bedroom.jpg",
+  "images/projects2/pool.jpg",
+];

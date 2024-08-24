@@ -1,6 +1,10 @@
+/** @format */
+
 import { Footer } from "../components/ui/footer";
 import { Header } from "../components/ui/header";
 import { Button } from "../components/button";
+import { Carousel } from "src/components/carousel";
+import { image } from "src/data/projectsdata";
 import classes from "../assets/styles/whatwedo.module.css";
 export function WhatWeDo() {
   return (
@@ -27,6 +31,9 @@ export function WhatWeDo() {
               <Button>MORE</Button>
             </div>
           </div>
+        </section>
+        <section>
+          <Carousel images={image} />
         </section>
       </main>
       <Footer></Footer>
