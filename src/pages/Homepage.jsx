@@ -8,8 +8,8 @@ export function Homepage() {
   return (
     <>
       <div className="hero">
+        <Header className={classes.header}></Header>
         <div className="hero-contents">
-          <Header></Header>
           <Overlay />
         </div>
       </div>

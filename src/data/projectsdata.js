@@ -49,9 +49,29 @@ export const propertData = [
 ];
 
 export const image = [
-  "/images/projects2/entrance.jpg",
-  "images/projects2/dinning.jpg",
-  "images/projects2/bathroom.jpg",
-  "images/projects2/bedroom.jpg",
-  "images/projects2/pool.jpg",
+  {
+    heading: "DEVELOPMENT PROJECT MANAGEMENT",
+    image: "/images/projects2/whatwedopic/greekmap.jpg",
+    text: "Project Development Management offers customizable services tailored to the specific needs and and goals of clients or investors.",
+  },
+  {
+    heading: "LEGAL&NOTARIAL SERVICES",
+    image: "images/projects2/whatwedopic/shakinghands.jpg",
+    text: "Access expert Legal & Notarial Services for your real estate needs through our trusted affiliates. Streamline transactions, contracts, and legal documentation with precision and confidence, ensuring seamless real estate processes from start to finish.",
+  },
+  {
+    heading: "MARKET ANALYSIS",
+    image: "images/projects2/whatwedopic/hands.jpg",
+    text: "The Market Analysis offers a comprehensive overview of real estate development trends in selected areas, such as districts within the Athens Riviera—a highly sought-after residential suburb south of the Athens CBD.",
+  },
+  {
+    heading: "PROPERTY MANAGEMENT",
+    image: "images/projects2/whatwedopic/construction.jpg",
+    text: "Experience hassel-free property management tailored for your greek properties. From maintenance to rental collection and payments, entrust us with the care and oversight of your investments.",
+  },
+  {
+    heading: "DEVELOPMENT OPPORTUINITIES SOURCING",
+    image: "images/projects2/whatwedopic/greece.jpg",
+    text: "Sourcing Development Opportunities focuses on empowering investors by sourcing and selecting prime real estate opportunities based on specific criteria. ",
+  },
 ];

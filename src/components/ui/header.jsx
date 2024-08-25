@@ -3,9 +3,9 @@
 import classes from "../../assets/styles/Header.module.css";
 import { Link } from "react-router-dom";
 import { NavLink } from "../nav-link";
-export function Header() {
+export function Header({ className }) {
   return (
-    <header>
+    <header className={className}>
       <nav className={classes.nav}>
         <ul>
           <li>

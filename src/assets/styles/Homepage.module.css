@@ -21,3 +21,8 @@
   align-items: center;
   gap: 10vh;
 }
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
