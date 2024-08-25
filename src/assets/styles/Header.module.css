@@ -3,13 +3,11 @@
   margin: 0;
   padding: 0;
   display: flex;
-  gap: 1.5rem;
-  font-size: 1.25rem;
   align-items: center;
   justify-content: space-around;
   color: #505050;
   text-decoration: none;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.07em;
 }
 
 .logoIndigo {
