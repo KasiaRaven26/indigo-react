@@ -1,24 +1,38 @@
 import { Footer } from "../components/ui/footer";
 import { Header } from "../components/ui/header";
+import { SubHeader } from "src/components/ui/sub-header";
 import classes from "../assets/styles/whoweare.module.css";
 export function WhoWeArePage() {
   return (
     <div>
       <Header></Header>
+      <h1>WHO WE ARE</h1>
       <main className={classes.whoWeAreMain}>
         <section className={classes.section1}>
-          <h1>WHO WE ARE</h1>
           <p>
-            INDIGO was established in <span>2021</span>, seizes the opportune
-            intersection of location and timing for real estate investment. Our
-            mission is to streamline the investment journey for potential
-            investors, saving them time, research efforts and the disappointment
-            that can accompany such pursuits.
+            Indigo, established in <span>2021</span> by Emmanuel Petrakis,
+            stands as a bespoke real estate consulting firm capitalizing on
+            strategic investment opportunities. Boasting 25 years of experience
+            and local knowledge.
           </p>
           <p>
-            With <span>20 years</span> of accumulated local knowledge and
-            expertise our founder guides you towards informed decisions and
-            profitable ventures.
+            Indigo serves as a trusted service company to investors, providing
+            expertise consulting in residential development. The company’s
+            multi-disciplinary team, comprised of investment, finance and realty
+            professionals, collaborates with reputable firms such as developers,
+            architects, lawyers, notaries and more.
+          </p>
+          <p>
+            Notably, the company specializes in consulting investors, both local
+            and foreign, with a primary focus on residential development
+            investments in the vibrant south of Athens.
+          </p>
+          <p>
+            The clientele includes private investors and investment funds, both
+            local and foreign, seeking tailored solutions for various real
+            estate ventures. Indigo emphasizes in transparency, low-risk
+            strategies, and a commitment to guide clients through every step of
+            their investment projects in Greece.
           </p>
         </section>
         <section className={classes.section2}>
@@ -48,6 +62,11 @@ export function WhoWeArePage() {
               Having served as CEO in over <span>10 companies</span> within this
               quarter-century timeframe, I bring a wealth of knowledge and
               experience to the table.
+            </p>
+            <p>
+              With <span>20 years</span> of accumulated local knowledge and
+              expertise I guide you towards informed decisions and profitable
+              ventures.
             </p>
           </div>
         </section>
