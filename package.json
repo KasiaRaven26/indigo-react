@@ -1,13 +1,14 @@
 {
   "name": "indigo-react",
-  "private": true,
+  "homepage": "https://<github-username>.github.io/<repo-name>/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "framer-motion": "^11.3.30",
