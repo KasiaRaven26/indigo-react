@@ -11,7 +11,7 @@ import { SignInPage } from "./pages/SignInPage";
 
 function App() {
   return (
-    <BrowserRouter basename="/">
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/projects" element={<Projects />} />
