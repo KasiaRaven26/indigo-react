@@ -1,13 +1,16 @@
 {
   "name": "indigo-react",
-  "homepage": "https://KasiaRaven26.github.io/KasiaRaven26.github.io/",
+  "homepage": "http://kasiaraven26.github.io/indigo-react",
+  "private": true,
+  "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "lint": "eslint .",
     "preview": "vite preview",
-    "deploy": "gh-pages -d build"
+    "build": "vite build"
   },
   "dependencies": {
     "framer-motion": "^11.3.30",
