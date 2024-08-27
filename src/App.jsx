@@ -11,7 +11,7 @@ import { SignInPage } from "./pages/SignInPage";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/">
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/projects" element={<Projects />} />
