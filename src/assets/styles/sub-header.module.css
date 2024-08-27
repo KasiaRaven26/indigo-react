@@ -1,0 +1,9 @@
+.subHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subHeader p {
+  max-width: 60vh;
+}

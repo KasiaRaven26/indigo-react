@@ -33,7 +33,7 @@ export function Contact() {
             </label>
             <Button type="submit">SUBMIT</Button>
           </form>
-          <div>
+          <div className={classes.contactSection}>
             <h2>T:+30 210 12 34 567</h2>
             <h2>E:INFO@INDIGO.GR</h2>
           </div>
