@@ -1,7 +1,6 @@
 {
   "name": "indigo-react",
   "homepage": "http://kasiaraven26.github.io/indigo-react",
-  "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
