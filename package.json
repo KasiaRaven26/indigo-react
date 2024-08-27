@@ -1,7 +1,6 @@
 {
   "name": "indigo-react",
-  "homepage": "https://<github-username>.github.io/<repo-name>/",
-  "version": "0.0.0",
+  "homepage": "https://KasiaRaven26.github.io/KasiaRaven26.github.io/",
   "type": "module",
   "scripts": {
     "dev": "vite",
