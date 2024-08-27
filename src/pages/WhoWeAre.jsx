@@ -1,6 +1,5 @@
 import { Footer } from "../components/ui/footer";
 import { Header } from "../components/ui/header";
-import { Button } from "../components/button";
 import classes from "../assets/styles/whoweare.module.css";
 export function WhoWeArePage() {
   return (
@@ -21,11 +20,10 @@ export function WhoWeArePage() {
             expertise our founder guides you towards informed decisions and
             profitable ventures.
           </p>
-          <Button to="/">MORE</Button>
         </section>
         <section className={classes.section2}>
           <div className={classes.emmanouel}>
-            <div>
+            <div className={classes.EmTitle}>
               <h1>EMMANUEL PETRAKIS</h1>
               <p>director and founder</p>
             </div>

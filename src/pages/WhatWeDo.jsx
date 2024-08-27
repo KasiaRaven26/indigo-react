@@ -2,27 +2,71 @@
 
 import { Footer } from "../components/ui/footer";
 import { Header } from "../components/ui/header";
-import { Button } from "../components/button";
 import { Carousel } from "src/components/carousel";
+import { SubHeader } from "src/components/ui/sub-header";
 import { image } from "src/data/projectsdata";
 import classes from "../assets/styles/whatwedo.module.css";
+
 export function WhatWeDo() {
   return (
-    <div>
+    <>
       <Header></Header>
+      <SubHeader>
+        <span>WHAT WE DO</span>
+        <span>
+          Indigo offers expert guidance, insights from the knowledge economy,
+          strategic planning, informed decision-making support, and aims to be a
+          trusted development partner.
+        </span>
+      </SubHeader>
       <main className={classes.WhatWeDoMain}>
         <section className={classes.section0}>
-          <h1>WHAT WE DO</h1>
-          <p>
-            Indigo offers expert guidance, insights from the knowledge economy,
-            strategic planning, informed decision-making support, and aims to be
-            a trusted development partner.
-          </p>
-          <Button>MORE</Button>
+          <h1>ELEVATE YOUR INVESTMENT WITH OUR EXPERTISE</h1>
+          <img src="../public/images/projects2/whatwedopic/office5.jpg" />
         </section>
         <section className={classes.section1}>
-          <div className={classes.container}>
-            <div className={classes.rightContainer}></div>
+          <h1>THE INDIGO ADVANTAGE</h1>
+          <div className={classes.TheIndigoAdvantageSection}>
+            <h3>INDUSTRY PARTNERSHIP</h3>
+            <img
+              className={classes.leftArrowSvg}
+              src="../public/images/rightarrow.svg"
+              alt=""
+            />
+            <p>
+              Indigo Consulting has forged partnerships with renowned
+              organizations and industry experts, solidifying our position as a
+              trusted and respected player in the real estate and construction
+              sectors.
+            </p>
+          </div>
+          <div className={classes.TheIndigoAdvantageSection}>
+            <h3>CLIENT SUCCESS STORIES</h3>
+            <img
+              className={classes.leftArrowSvg}
+              src="../public/images/rightarrow.svg"
+              alt=""
+            />
+            <p>
+              Our clients' success stories and glowing testimonials showcase our
+              ability to understand and exceed their expectations, fostering
+              long-term relationships built on trust and satisfaction.
+            </p>
+          </div>
+          <div className={classes.TheIndigoAdvantageSection}>
+            <h3>MARKET INTELLIGENCE</h3>
+            <img
+              className={classes.leftArrowSvg}
+              src="../public/images/rightarrow.svg"
+              alt=""
+            />
+            <p>
+              Our team diligently gathers and analyzes data on the Greek real
+              estate market, empowering you to make informed decisions. Whether
+              you're a seasoned investor or entering the market for the first
+              time, our comprehensive reports and analyses offer a valuable
+              roadmap to navigate the ever-changing landscape.
+            </p>
           </div>
         </section>
         <section className={classes.section2}>
@@ -38,7 +82,6 @@ export function WhatWeDo() {
               development, cristalize vision, and coordinate specialist skills
             </p>
             <h1>STRATEGIC PLANNING</h1>
-
             <p>
               Take a holistic approach, considering the big picture and local
               markets. Extract maximum value from your site with an attractive
@@ -58,11 +101,11 @@ export function WhatWeDo() {
             </p>
           </div>
         </section>
-        <section className={classes.WhatWeDoSection3}>
+        <section className={classes.section3}>
           <Carousel images={image} />
         </section>
       </main>
       <Footer></Footer>
-    </div>
+    </>
   );
 }

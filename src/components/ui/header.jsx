@@ -1,7 +1,6 @@
 /** @format */
 
 import classes from "../../assets/styles/Header.module.css";
-import { Link } from "react-router-dom";
 import { NavLink } from "../nav-link";
 export function Header({ className }) {
   return (

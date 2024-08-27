@@ -31,7 +31,6 @@ export function Homepage() {
           <p>REDEVELOPMENT-DEVELOPMENT PROJECTS</p>
           <p>PROPERTY MANAGEMENT</p>
           <p>LEGAL&NOTARIAL SERVICES</p>
-          <Button>MORE</Button>
         </div>
         <img
           className="section-2-image"

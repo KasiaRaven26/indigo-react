@@ -1,5 +1,5 @@
 .image {
-  height: 35vh;
+  height: 40vh;
 }
 
 .emmanouel {
@@ -51,4 +51,10 @@
 }
 .whoWeAreMain span {
   text-decoration: underline 0.5px;
+}
+.EmTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-bottom: 1vh;
 }

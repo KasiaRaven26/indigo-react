@@ -19,28 +19,41 @@
   flex-direction: column;
   justify-content: space-evenly;
 }
+
 .section1 {
+  padding: 5vh;
+}
+
+.section1 p,
+.section2 p,
+.section3 p {
+  max-width: 50vh;
+}
+
+.section0,
+.section1,
+.section2,
+.section3 {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+.section2,
+.section3 {
   display: flex;
   justify-content: space-evenly;
-  font-size: 20px;
 }
 .section2 {
   background-color: #d5dfe1;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding-top: 4vh;
-  padding-bottom: 4vh;
+  padding: 5vh;
 }
 
-.section0 {
-  display: flex;
-  flex-direction: column;
+.section3 {
   align-items: center;
-  margin-bottom: 5vh;
-  gap: 2vh;
 }
-.section2Wrapper1 {
+
+.section2Wrapper1,
+.section2Wrapper2 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -48,24 +61,28 @@
 }
 
 .section2Wrapper2 {
+  justify-content: center;
+}
+
+.section0 img {
+  height: 500px;
+}
+
+.WhatWeDoTitle {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1vh;
+  gap: 10vh;
 }
-.WhatWeDoMain p {
-  width: 40vh;
-  line-height: 2vh;
+
+.TheIndigoAdvantageSection {
+  display: flex;
+  flex-direction: row;
+  gap: 10vh;
+  margin-top: 5vh;
+  justify-content: space-evenly;
+  align-items: center;
 }
-.WhatWeDoSection3 {
-  padding-top: 6vh;
-  padding-bottom: 6vh;
-}
-.WhatWeDoMain p {
-  font-size: 22px;
-  line-height: 2.5vh;
-  letter-spacing: 0.05vh;
-}
-.section2 p {
-  font-size: 18px;
+.leftArrowSvg {
+  height: 50px;
 }
