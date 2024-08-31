@@ -8,6 +8,8 @@ import { Contact } from "./pages/Contact";
 import { WhoWeArePage } from "./pages/WhoWeAre";
 import { WhatWeDo } from "./pages/WhatWeDo";
 import { SignInPage } from "./pages/SignInPage";
+import { RequestAccess } from "./pages/RequestAccess";
+
 
 function App() {
   return (
@@ -19,6 +21,7 @@ function App() {
         <Route path="/who-we-are" element={<WhoWeArePage />} />
         <Route path="/what-we-do" element={<WhatWeDo />} />
         <Route path="/sign-in" element={<SignInPage />} />
+        <Route path="/request-access" element={<RequestAccess />} />
         {/* <Route path="/client">
           <Route index={true} element={<ClientHomePage />}></Route>
           <Route path="your-messages" element={<YourMessages />} />

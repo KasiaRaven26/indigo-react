@@ -28,11 +28,8 @@ export function Header({ className }) {
             <NavLink to="/contact">CONTACT</NavLink>
           </li>
           <li className={classes.hoverEffect}>
-            <NavLink to="/sign-in">SIGN IN</NavLink>
-          </li>
-          <li className={classes.hoverEffect}>
-            <NavLink to="gr-eu">GR/EU</NavLink>
-          </li>
+            <NavLink to="/request-access">REQUEST ACCESS</NavLink>
+            </li>
         </ul>
       </nav>
     </header>
