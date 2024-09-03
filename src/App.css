@@ -40,12 +40,23 @@ section h1 {
   align-items: center;
   justify-content: space-around;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../public//images/backgroundpicture.jpg");
+    url("../public//images/greeceback4.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
 }
-
+.hero:after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0.15;
+  pointer-events: none;
+}
 .hero-contents {
   position: absolute;
   left: 50%;

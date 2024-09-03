@@ -35,7 +35,7 @@ export function Projects() {
           onClose={closeModal}
         />
       ) : null}
-      <h1 className={classes.h1}>SAMPLES OF PROJECTS</h1>
+      <h1 className={classes.h1}>SAMPLES OF SERVICES</h1>
       <section className={classes.projectsSection}>
         <ProjectsImageGrid modalImage={modalImage} projects={propertData} />
       </section>
