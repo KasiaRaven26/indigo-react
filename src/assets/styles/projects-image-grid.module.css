@@ -1,7 +1,3 @@
-.projectsSection {
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
 .ul {
   display: flex;
   flex-wrap: wrap;
@@ -9,7 +5,4 @@
   gap: 100px;
   list-style-type: none;
   padding: 0px;
-}
-.h1 {
-  letter-spacing: 0.08em;
 }

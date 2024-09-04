@@ -7,15 +7,6 @@ export function Header({ className }) {
     <header className={className}>
       <nav className={classes.nav}>
         <ul>
-          <li className={classes.hoverEffect}>
-            <NavLink to="/who-we-are">WHO WE ARE</NavLink>
-          </li>
-          <li className={classes.hoverEffect}>
-            <NavLink to="/what-we-do">WHAT WE DO</NavLink>
-          </li>
-          <li className={classes.hoverEffect}>
-            <NavLink to="/projects">PROJECTS</NavLink>
-          </li>
           <li>
             <NavLink to="/">
               <img
@@ -25,11 +16,20 @@ export function Header({ className }) {
             </NavLink>
           </li>
           <li className={classes.hoverEffect}>
+            <NavLink to="/who-we-are">WHO WE ARE</NavLink>
+          </li>
+          <li className={classes.hoverEffect}>
+            <NavLink to="/what-we-do">WHAT WE DO</NavLink>
+          </li>
+          <li className={classes.hoverEffect}>
+            <NavLink to="/projects">PROJECTS</NavLink>
+          </li>
+          <li className={classes.hoverEffect}>
             <NavLink to="/contact">CONTACT</NavLink>
           </li>
           <li className={classes.hoverEffect}>
             <NavLink to="/request-access">REQUEST ACCESS</NavLink>
-            </li>
+          </li>
         </ul>
       </nav>
     </header>
