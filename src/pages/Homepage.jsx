@@ -32,7 +32,7 @@ export function Homepage() {
           <h2>Market analysis</h2>
           <h2>Redevelopment-development project</h2>
           <h2>Property managment</h2>
-          <h2>Legal&notarial services</h2>
+          <h2>Legal & notarial services</h2>
         </div>
         <img
           className="section-2-image"
