@@ -4,37 +4,37 @@ export const propertData = [
   {
     id: 1,
     title: "A",
-    image: "/images/projects2/entrance.jpg",
+    image: "/images/projects2/first.jpg",
   },
   {
     id: 2,
     title: "A",
-    image: "images/projects2/dinning.jpg",
+    image: "images/projects2/second.jpg",
   },
   {
     id: 3,
     title: "A",
-    image: "images/projects2/bathroom.jpg",
+    image: "images/projects2/third.jpg",
   },
   {
     id: 4,
     title: "A",
-    image: "images/projects2/bedroom.jpg",
+    image: "images/projects2/fourth.jpg",
   },
   {
     id: 5,
     title: "A",
-    image: "images/projects2/pool.jpg",
+    image: "images/projects2/fifth.jpg",
   },
   {
     id: 6,
     title: "A",
-    image: "images/projects2/csm-pool.jpg",
+    image: "images/projects2/sixth.jpg",
   },
   {
     id: 7,
     title: "A",
-    image: "images/projects2/living-final.jpg",
+    image: "images/projects2/seventh.jpg",
   },
   {
     id: 8,

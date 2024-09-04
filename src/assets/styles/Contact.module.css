@@ -17,6 +17,7 @@ input[type="text"] {
   width: 200%;
   background-color: #d5dfe1;
   color: #505050;
+  border-radius: 4px;
 }
 
 .contact {
