@@ -6,7 +6,7 @@ import classes from "../../../assets/styles/ui/header.module.css";
 
 export function MenuItems({ items }) {
   return (
-    <li className={classes.MenuItems}>
+    <li className={classes.menuItems}>
       {items.submenu ? (
         <>
           <button type="button" aria-haspopup="menu">

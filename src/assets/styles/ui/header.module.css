@@ -1,5 +1,9 @@
+.desktopNav{
+    width: 100%;
+    }
+
 .desktopNav .dropdown{
-/* display: none; */
+display: none;
 list-style: none;
 z-index: 9999;
 position: absolute;
@@ -7,16 +11,31 @@ right: 0;
 left: auto;
 }
 
-.desktopNav .MenuItems {
-    position: relative;    
+.desktopNav .menuItems {
+    position: relative;
+    display: block;
+    text-decoration: none;
 }
 
-
-.desktopNav .dropdown.show {
+/* .desktopNav .dropdown.show {
     display: block;
+  } */
+
+  .desktopNav .dropdown {
+    /* display: block; */
   }
 
-.MenuItems button{
+  .menus {
+    height: 100%;
+  }
+  .desktopNav .menus {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.menuItems button{
     border: none;
     font-size: inherit;
     background-color: transparent;
