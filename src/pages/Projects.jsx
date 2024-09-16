@@ -1,6 +1,6 @@
 /** @format */
 import { useState } from "react";
-import { Header } from "../components/ui/header";
+import { Header } from "../components/ui/header/Header";
 import { Footer } from "../components/ui/footer";
 import { Modal } from "../components/ui/modal";
 import ProjectsImageGrid from "src/components/projects-image-grid";
