@@ -1,14 +1,18 @@
 .desktopNav{
     width: 100%;
-    }
+    line-height: 3vh;
+}
 
 .desktopNav .dropdown{
-display: none;
-list-style: none;
-z-index: 9999;
-position: absolute;
-right: 0;
-left: auto;
+    display: none;
+    list-style: none;
+    z-index: 9999;
+    position: absolute;
+    right: 0;
+    left: auto;
+}
+.menuItems {
+    width: 10vw;
 }
 
 .desktopNav .menuItems {
@@ -17,12 +21,12 @@ left: auto;
     text-decoration: none;
 }
 
-/* .desktopNav .dropdown.show {
+.desktopNav .dropdown.show {
     display: block;
-  } */
+  }
 
-  .desktopNav .dropdown {
-    /* display: block; */
+.desktopNav .dropdown {
+    display: none;
   }
 
   .menus {
@@ -42,3 +46,19 @@ left: auto;
     font: inherit;
     cursor: pointer;
 }
+.ulWrapper {
+    height: 100%;
+}
+
+.desktopNav a {
+    display: block;
+  position: relative;
+  padding: 0.2em 0;
+}
+
+.desktopNav button:hover {
+text-decoration: underline;
+}
+
+
+
