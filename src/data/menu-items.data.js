@@ -35,6 +35,6 @@ export const menuItemsData = [
   },
   {
     title: "Contact us",
-    url: "/contact-us",
+    url: "/contact",
   },
 ];

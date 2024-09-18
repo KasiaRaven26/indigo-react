@@ -51,3 +51,45 @@
   justify-content: flex-end;
   align-items: center;
 }
+
+.hamburgerMenu {
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.mobileNavContainer {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  transform: translateX(-100%);
+  transition-duration: 0.3s;
+  width: 100vw;
+  height: 100vh;
+}
+
+.mobileNavMenuActive {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transform: translate(0%, 0%);
+  width: 100vw;
+  height: 100vh;
+  background-color:  #d5dfe1;
+  z-index: 20;
+  transition-duration: 0.3s;
+  /* overflow: hidden; */
+}
+
+.mobileNavMenuActive ul{
+list-style: none;
+padding: 0;
+display: flex;
+justify-content: center;
+flex-direction: column;
+gap: 5vh;
+width: 100vw;
+height: 100vh;
+}

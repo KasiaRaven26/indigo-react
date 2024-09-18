@@ -16,9 +16,9 @@ export function Projects() {
     setModalContent(content);
   };
 
-  const closeModal = () => {
-    setIsModalOpen(false);
-  };
+  // const closeModal = () => {
+  //   setIsModalOpen(false);
+  // };
 
   const modalImage = (imageChosen) => {
     openModal(imageChosen);
@@ -28,13 +28,13 @@ export function Projects() {
   return (
     <div>
       <Header></Header>
-      {isModalOpen ? (
+      {/* {isModalOpen ? (
         <Modal
           isModalOpen={isModalOpen}
           modalContent={modalContent}
           onClose={closeModal}
         />
-      ) : null}
+      ) : null} */}
       <h1 className={classes.h1}>SAMPLES OF SERVICES</h1>
       <section className={classes.projectsSection}>
         <ProjectsImageGrid modalImage={modalImage} projects={propertData} />

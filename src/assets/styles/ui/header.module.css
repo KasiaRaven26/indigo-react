@@ -55,10 +55,10 @@
   position: relative;
   padding: 0.2em 0;
 }
+.mobileNavContainer ul{
+    list-style: none;
+}
 
 .desktopNav button:hover {
 text-decoration: underline;
 }
-
-
-

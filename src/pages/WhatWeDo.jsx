@@ -1,7 +1,7 @@
 /** @format */
 
 import { Footer } from "../components/ui/footer";
-import { Header } from "../components/ui/header";
+import { Header } from "../components/ui//header/header";
 import { Carousel } from "src/components/carousel";
 import { SubHeader } from "src/components/ui/sub-header";
 import { image } from "src/data/projectsdata";

@@ -1,4 +1,6 @@
-import { Header } from "../components/ui/header";
+/** @format */
+
+import { Header } from "../components/ui/header/header";
 import { Footer } from "../components/ui/footer";
 import { Button } from "../components/button";
 import classes from "../assets/styles/contact.module.css";
