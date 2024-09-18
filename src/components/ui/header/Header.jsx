@@ -1,21 +1,23 @@
 /** @format */
 
 import classes from "../../../assets/styles/Header.module.css";
-import { IoMenuOutline } from "react-icons/io5";
+
 import { NavLink } from "src/components/nav-link";
 import { Navbar } from "./navbar";
+import { MobileNavbar } from "./MobileNavbar";
+import { MobileMenuIcon } from "./MobileMenuIcon";
 import { useEffect, useState } from "react";
 export function Header({ className }) {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
   const [showMobileNavMenu, setShowMobileNavMenu] = useState(false);
-  const [hamburgerOpen, setHamburgerOpen] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const handleHamburgerOpen = () => {
-    if (hamburgerOpen) {
-      setHamburgerOpen(false);
+  const toggleHamburger = () => {
+    if (mobileMenuOpen) {
+      setMobileMenuOpen(false);
       document.body.style.overflow = "scroll";
     } else {
-      setHamburgerOpen(true);
+      setMobileMenuOpen(true);
       document.body.style.overflow = "hidden";
     }
   };
@@ -34,10 +36,9 @@ export function Header({ className }) {
       if (window.innerWidth > 767) {
         setShowMobileNavMenu(false);
         setMobileNavOpen(false);
-        setHamburgerOpen(false);
+        setMobileMenuOpen(false);
       } else if (window.innerWidth < 767) {
         setShowMobileNavMenu(true);
-        console.log(showMobileNavMenu);
         setMobileNavOpen(true);
       }
     };
@@ -46,20 +47,6 @@ export function Header({ className }) {
       window.removeEventListener("resize", handleResize);
     };
   });
-
-  function Hamburger() {
-    //
-    return (
-      <div className={classes.hamburgerContainer}>
-        <IoMenuOutline
-          className={classes.hamburgerMenu}
-          size="80px"
-          color="black"
-          onClick={handleHamburgerOpen}
-        />
-      </div>
-    );
-  }
 
   return (
     <>
@@ -71,39 +58,14 @@ export function Header({ className }) {
               src="./images/logoindigo.png"
             ></img>
           </NavLink>
-          {showMobileNavMenu ? <Hamburger /> : <Navbar />}
+          {showMobileNavMenu ? (
+            <MobileMenuIcon openMobileNav={toggleHamburger} />
+          ) : (
+            <Navbar />
+          )}
         </nav>
       </header>
-      <div
-        className={
-          hamburgerOpen
-            ? `${classes.mobileNavContainer} ${classes.mobileNavMenuActive}`
-            : `${classes.mobileNavContainer}`
-        }
-      >
-        <ul className={classes.mobileNavList}>
-          <li>
-            <NavLink to="/">
-              <h1>Home</h1>
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/">
-              <h1>About us</h1>
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/">
-              <h1>Services</h1>
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/">
-              <h1>Contact-us</h1>
-            </NavLink>
-          </li>
-        </ul>
-      </div>
+      {mobileMenuOpen && <MobileNavbar />}
     </>
   );
 }

@@ -80,7 +80,6 @@
   background-color:  #d5dfe1;
   z-index: 20;
   transition-duration: 0.3s;
-  /* overflow: hidden; */
 }
 
 .mobileNavMenuActive ul{
