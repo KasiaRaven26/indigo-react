@@ -2,10 +2,6 @@
 
 export const menuItemsData = [
   {
-    title: "Home",
-    url: "/",
-  },
-  {
     title: "About us",
     url: "/about-us",
     submenu: [
@@ -36,5 +32,9 @@ export const menuItemsData = [
   {
     title: "Contact us",
     url: "/contact",
+  },
+  {
+    title: "Login",
+    url: "/request-access",
   },
 ];

@@ -19,11 +19,7 @@ export function MenuItems({ items }) {
             >
               {items.title}{" "}
             </button>
-            <Dropdown
-              submenus={items.submenu}
-              dropdown={dropdown}
-              // setDropdown={setDropdown}
-            />
+            <Dropdown submenus={items.submenu} dropdown={dropdown} />
           </>
         ) : (
           <NavLink to={items.url}>{items.title}</NavLink>
