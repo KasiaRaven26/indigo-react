@@ -4,13 +4,15 @@ import AuthContext from "src/contexts/AuthContext";
 import { users } from "src/data/users";
 import { Footer } from "src/components/ui/footer";
 import classes from "../assets/styles/requestaccess.module.css";
-// import { Button } from "src/components/button";
 
 export function RequestAccess() {
-  const { user, isLoggedIn, setUser, login } = useContext(AuthContext);
+  const { setUser, login } = useContext(AuthContext);
+
   const [input, setInput] = useState({});
   const [showPassword, setShowPassword] = useState(false);
   const [signIn, setSignIn] = useState({});
+  const [userNameAttempts, setUserNameAttempts] = useState(0);
+  const [passwordAttempts, setPasswordAttempts] = useState(0);
 
   const findUser = () => {
     const found = users.find((element) => element.userName === input.userName);
@@ -18,7 +20,7 @@ export function RequestAccess() {
       setShowPassword(true);
       setSignIn({ ...found });
     }
-    console.log(signIn);
+    setUserNameAttempts((n) => n + 1);
   };
 
   const checkPassword = () => {
@@ -34,7 +36,7 @@ export function RequestAccess() {
     if (showPassword) {
       var result = checkPassword();
       if (result) {
-        setUser({ signIn });
+        setUser({ ...signIn });
         login();
       }
     }
@@ -45,6 +47,10 @@ export function RequestAccess() {
     const value = event.target.value;
     setInput((values) => ({ ...values, [name]: value }));
   };
+
+  function IncorrectPassword() {
+    return <p>The username submitted was not found </p>;
+  }
 
   return (
     <>
@@ -65,8 +71,10 @@ export function RequestAccess() {
                 value={input.userName || ""}
                 onChange={handleChange}
               />
-              <div className={classes.buttoncontainer}></div>
             </label>
+            {userNameAttempts > 0 && !showPassword ? (
+              <IncorrectPassword />
+            ) : null}
             {showPassword ? (
               <label>
                 Password:

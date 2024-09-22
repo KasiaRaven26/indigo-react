@@ -37,4 +37,8 @@ export const menuItemsData = [
     title: "Login",
     url: "/request-access",
   },
+  {
+    title: "Register",
+    url: "/register",
+  },
 ];

@@ -12,11 +12,9 @@ import { SignInPage } from "./pages/SignInPage";
 import { RequestAccess } from "./pages/RequestAccess";
 import AuthContext from "./contexts/AuthContext";
 import { AuthProvider } from "./contexts/AuthContext";
+import { RegisterPage } from "./pages/RegisterPage";
 
 function App() {
-  // const [user, setUser] = useState({ name: "adam" });
-  // const { user } = useContext(AuthContext);
-
   return (
     <AuthProvider>
       <BrowserRouter>
@@ -28,6 +26,7 @@ function App() {
           <Route path="/what-we-do" element={<WhatWeDo />} />
           <Route path="/sign-in" element={<SignInPage />} />
           <Route path="/request-access" element={<RequestAccess />} />
+          <Route path="/register" element={<RegisterPage />} />
         </Routes>
       </BrowserRouter>
     </AuthProvider>
