@@ -76,3 +76,33 @@
 .section-3-image {
   height: 30vh;
 }
+
+input[type="text"] {
+  border: 1px solid;
+  height: 2rem;
+  width: 100%;
+  background-color: #d5dfe1;
+  color: #505050;
+  border-radius: 4px;
+}
+
+input[type="email"] {
+  border: 1px solid;
+  height: 2rem;
+  width: 100%;
+  background-color: #d5dfe1;
+  color: #505050;
+  border-radius: 4px;
+}
+
+input[type="checkbox"] {
+  border: 1px solid;
+  height: 1rem;
+  width: 20%;
+  accent-color: #d5dfe1;
+  color: #505050;
+  border-radius: 4px;
+}
+
+
+

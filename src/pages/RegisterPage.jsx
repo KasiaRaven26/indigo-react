@@ -3,6 +3,7 @@ import { useContext, useState } from "react";
 import AuthContext from "src/contexts/AuthContext";
 import { Footer } from "src/components/ui/footer";
 import classes from "../assets/styles/requestaccess.module.css";
+import styles from "../assets/styles/pages/RegisterPage.module.css";
 
 export function RegisterPage() {
   const { setUser, login } = useContext(AuthContext);
@@ -45,45 +46,46 @@ export function RegisterPage() {
             className={classes.logoIndigo}
             src="./images/logoindigo.png"
           ></img>
-          <form onSubmit={handleSubmit}>
-            <label>
-              User name:
+          <h1>Register with Indigo</h1>
+          <form onSubmit={handleSubmit} className={styles.form}>
+            <div className={styles.formItemContainer}>
+              <label>User name:</label>
               <input
                 type="text"
                 name="userName"
                 value={input.userName || ""}
                 onChange={handleChange}
               />
-            </label>
-            <label>
-              Password
+            </div>
+            <div className={styles.formItemContainer}>
+              <label>Password</label>
               <input
                 type="text"
                 name="password"
                 value={input.password || ""}
                 onChange={handleChange}
               />
-            </label>
-            <label>
-              Password
+            </div>
+            <div className={styles.formItemContainer}>
+              <label>Password:</label>
               <input
                 type="text"
                 name="passwordConfirm"
                 value={input.passwordConfirm || ""}
                 onChange={handleChange}
               />
-            </label>
-            <label>
-              Email
+            </div>
+            <div className={styles.formItemContainer}>
+              <label>Email:</label>
               <input
                 type="email"
                 name="email"
                 value={input.email || ""}
                 onChange={handleChange}
               />
-            </label>
-            <label>
-              Request access to Indigo Properties
+            </div>
+            <div className={styles.formCheckboxContainer}>
+              <label>Request access to Indigo Properties</label>
               <input
                 name="checkbox1"
                 type="checkbox"
@@ -92,9 +94,9 @@ export function RegisterPage() {
                 // checked={input.checkbox1 | ""}
                 onChange={handleChange}
               />
-            </label>
-            <label>
-              Request access to Indigo Consulting
+            </div>
+            <div className={styles.formCheckboxContainer}>
+              <label>Request access to Indigo Consulting</label>
               <input
                 name="checkbox2"
                 label="checkbox2"
@@ -103,7 +105,7 @@ export function RegisterPage() {
                 // checked={input.checkbox2 | ""}
                 onChange={handleChange}
               />
-            </label>
+            </div>
             <input type="submit" />
           </form>
         </div>

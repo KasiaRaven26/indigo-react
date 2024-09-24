@@ -25,7 +25,6 @@
 .formcontainer {
   background-color: #d9d9d9b2;
   width: 60vh;
-  height: 60vh;
   border-radius: 5%;
 }
 .logoIndigo {
@@ -37,7 +36,7 @@
   justify-content: space-around;
   margin-top: 5vh;
 }
-input[type="text"] {
+/* input[type="text"] {
   height: 2rem;
   width: 50%;
-}
+} */
