@@ -2,8 +2,9 @@
 import { useContext, useState } from "react";
 import AuthContext from "src/contexts/AuthContext";
 import { Footer } from "src/components/ui/footer";
-import classes from "../assets/styles/requestaccess.module.css";
+import { Header } from "src/components/ui/header/header";
 import styles from "../assets/styles/pages/RegisterPage.module.css";
+import headerStyles from "../assets/styles/Homepage.module.css";
 
 export function RegisterPage() {
   const { setUser, login } = useContext(AuthContext);
@@ -40,10 +41,11 @@ export function RegisterPage() {
 
   return (
     <>
-      <div className={classes.hero}>
-        <div className={classes.formcontainer}>
+      <div className={styles.hero}>
+        <Header className={headerStyles.header}></Header>
+        <div className={styles.formcontainer}>
           <img
-            className={classes.logoIndigo}
+            className={styles.logoIndigo}
             src="./images/logoindigo.png"
           ></img>
           <h1>Register with Indigo</h1>
@@ -102,11 +104,10 @@ export function RegisterPage() {
                 label="checkbox2"
                 value={checkedTwo}
                 type="checkbox"
-                // checked={input.checkbox2 | ""}
                 onChange={handleChange}
               />
             </div>
-            <input type="submit" />
+            <button type="submit">Submit</button>
           </form>
         </div>
       </div>

@@ -35,7 +35,7 @@ export const menuItemsData = [
   },
   {
     title: "Login",
-    url: "/request-access",
+    url: "/login",
   },
   {
     title: "Register",

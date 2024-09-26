@@ -1,44 +1,47 @@
 /** @format */
 import { useContext, useState } from "react";
+import { useNavigate } from "react-router-dom";
+// import { Navigate } from "react-router-dom";
+// import { Redirect } from "react-router-dom";
 import AuthContext from "src/contexts/AuthContext";
 import { users } from "src/data/users";
 import { Footer } from "src/components/ui/footer";
+import { Header } from "src/components/ui/header/header";
 import classes from "../assets/styles/requestaccess.module.css";
+import headerStyles from "../assets/styles/Homepage.module.css";
 
 export function RequestAccess() {
-  const { setUser, login } = useContext(AuthContext);
+  const { setUser, login, loginPath, setLoginPath } = useContext(AuthContext);
+  const navigate = useNavigate();
 
   const [input, setInput] = useState({});
-  const [showPassword, setShowPassword] = useState(false);
-  const [signIn, setSignIn] = useState({});
-  const [userNameAttempts, setUserNameAttempts] = useState(0);
-  const [passwordAttempts, setPasswordAttempts] = useState(0);
 
   const findUser = () => {
-    const found = users.find((element) => element.userName === input.userName);
-    if (found) {
-      setShowPassword(true);
-      setSignIn({ ...found });
-    }
-    setUserNameAttempts((n) => n + 1);
+    const user = users.find((element) => element.userName === input.userName);
+    return user;
   };
 
-  const checkPassword = () => {
-    const result = signIn.password === input.password;
+  const checkPassword = (user) => {
+    const result = user.password === input.password;
     return result;
   };
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    if (!showPassword) {
-      findUser();
-    }
-    if (showPassword) {
-      var result = checkPassword();
-      if (result) {
-        setUser({ ...signIn });
-        login();
-      }
+    var user = findUser();
+
+    var result = checkPassword(user);
+    console.log(user);
+    if (result) {
+      login();
+      // if (loginPath) {
+      //   setLoginPath("");
+      //   console.log(`/${loginPath}`);
+      //   navigate(`${loginPath}`);
+      // } else {
+      //   navigate("/");
+      // }
+      navigate("/");
     }
   };
 
@@ -48,45 +51,35 @@ export function RequestAccess() {
     setInput((values) => ({ ...values, [name]: value }));
   };
 
-  function IncorrectPassword() {
-    return <p>The username submitted was not found </p>;
-  }
-
   return (
     <>
       <div className={classes.hero}>
+        <Header className={headerStyles.header}></Header>
         <div className={classes.formcontainer}>
           <img
             className={classes.logoIndigo}
             src="./images/logoindigo.png"
           ></img>
-          <h1>EXCLUSIVE ACCESS</h1>
-          <h2>User ID</h2>
-          <form onSubmit={handleSubmit}>
-            <label>
-              User name:
+          <h1>Login</h1>
+          <form onSubmit={handleSubmit} className={classes.loginForm}>
+            <div className={classes.formItemContainer}>
+              <label>User name:</label>
               <input
                 type="text"
                 name="userName"
                 value={input.userName || ""}
                 onChange={handleChange}
               />
-            </label>
-            {userNameAttempts > 0 && !showPassword ? (
-              <IncorrectPassword />
-            ) : null}
-            {showPassword ? (
-              <label>
-                Password:
-                <input
-                  type="text"
-                  name="password"
-                  value={input.password || ""}
-                  onChange={handleChange}
-                />
-              </label>
-            ) : null}
-
+            </div>
+            <div className={classes.formItemContainer}>
+              <label>Password:</label>
+              <input
+                type="text"
+                name="password"
+                value={input.password || ""}
+                onChange={handleChange}
+              />
+            </div>
             <input type="submit" />
           </form>
         </div>

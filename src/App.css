@@ -104,5 +104,11 @@ input[type="checkbox"] {
   border-radius: 4px;
 }
 
+.page-wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
 
