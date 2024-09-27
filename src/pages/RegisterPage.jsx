@@ -5,24 +5,69 @@ import { Footer } from "src/components/ui/footer";
 import { Header } from "src/components/ui/header/header";
 import styles from "../assets/styles/pages/RegisterPage.module.css";
 import headerStyles from "../assets/styles/Homepage.module.css";
+import { users } from "src/data/users";
 
 export function RegisterPage() {
   const { setUser, login } = useContext(AuthContext);
   const [input, setInput] = useState({});
   const [checkedOne, setCheckedOne] = useState(false);
   const [checkedTwo, setCheckedTwo] = useState(false);
+  const [newUser, setNewUser] = useState({});
+  const [errors, setErrors] = useState({});
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log("adam");
+    const user = findUser();
+    if (!user) {
+      console.warn("User already exists");
+    }
+    console.log(errors);
+    const password = validatePassword();
+    if (!password) {
+      console.warn("Passwords do not match");
+    }
   };
 
-  // const findUser = () => {
-  //   const found = users.find((element) => element.userName === input.userName);
-  //   if (found) {
-  //     console.log("asdsad");
-  //   }
-  // };
+  const findUser = () => {
+    const userInDb = users.find(
+      (element) => element.userName === input.userName
+    );
+    if (userInDb) {
+      console.log(errors);
+
+      // setErrors({ ...errors, invalidUserName: true });
+      setErrors((previousState) => ({
+        ...previousState,
+        invalidUserName: true,
+      }));
+      return null;
+    } else {
+      // setErrors({ ...errors, invalidUserName: false });
+      setErrors((previousState) => ({
+        ...previousState,
+        invalidUserName: false,
+      }));
+      setNewUser({ ...input, userName: input.userName });
+      return newUser;
+    }
+  };
+
+  const validatePassword = () => {
+    if (input.password != input.passwordConfirm) {
+      setErrors((previousState) => ({
+        ...previousState,
+        invalidPassword: true,
+      }));
+      return false;
+    } else {
+      setCheckedOne({ ...input, password: input.password });
+      setErrors((previousState) => ({
+        ...previousState,
+        invalidPassword: false,
+      }));
+      return true;
+    }
+  };
 
   const handleChange = (event) => {
     const name = event.target.name;
@@ -59,6 +104,7 @@ export function RegisterPage() {
                 onChange={handleChange}
               />
             </div>
+            {errors.invalidUserName ? <p>User name already exists</p> : null}
             <div className={styles.formItemContainer}>
               <label>Password</label>
               <input
@@ -69,7 +115,7 @@ export function RegisterPage() {
               />
             </div>
             <div className={styles.formItemContainer}>
-              <label>Password:</label>
+              <label>Confirm password:</label>
               <input
                 type="text"
                 name="passwordConfirm"
@@ -77,6 +123,7 @@ export function RegisterPage() {
                 onChange={handleChange}
               />
             </div>
+            {errors.invalidPassword ? <p>Password invalid</p> : null}
             <div className={styles.formItemContainer}>
               <label>Email:</label>
               <input

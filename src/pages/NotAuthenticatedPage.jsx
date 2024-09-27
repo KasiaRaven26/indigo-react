@@ -10,7 +10,7 @@ export function NotAuthenticatedPage() {
       <Header></Header>
       <h1>You are not authenticated to use this page</h1>
       <h1>Please click the link below to register with Indigo</h1>
-      <NavLink to="/register">Login</NavLink>
+      <NavLink to="/register">Register with Indigo</NavLink>
       <Footer></Footer>
     </div>
   );
