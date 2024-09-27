@@ -14,41 +14,37 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  margin-bottom: 10px;
-  background-color: #d5dfe1;
-  height: 60vh;
-  margin-top: 8vh;
-  margin-bottom: 8vh;
+  padding: 2vh;
+  /* height: 80vh; */
 }
 
 .section1 p {
   max-width: 80vh;
-  font-size: 22px;
+  ;
+  /* font-size: 22px;
   line-height: 2.5vh;
-  letter-spacing: 0.08vh;
+  letter-spacing: 0.08vh; */
 }
 .section2 {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 10vh;
-  margin-bottom: 10vh;
-  line-height: 2.5vh;
+  flex-wrap: wrap;
+  padding: 2vh;
 }
 
 .paragraphContainer {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  height: 20vh;
+  /* height: 20vh; */
 }
 .paragraphContainer p {
-  font-size: 22px;
-  line-height: 2.5vh;
-  letter-spacing: 0.05vh;
-  max-width: 80vh;
-}
+  max-width: 60vw; 
+  min-width: 20vw;
+} 
 .whoWeAreMain span {
   text-decoration: underline 0.5px;
 }
@@ -57,4 +53,10 @@
   flex-direction: column;
   align-items: start;
   margin-bottom: 1vh;
+}
+
+.subHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

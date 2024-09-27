@@ -1,16 +1,13 @@
 /** @format */
 
-import { Footer } from "../components/ui/footer";
-import { Header } from "../components/ui//header/header";
 import { Carousel } from "src/components/carousel";
 import { SubHeader } from "src/components/ui/sub-header";
 import { image } from "src/data/projectsdata";
-import classes from "../assets/styles/whatwedo.module.css";
+import styles from "../../../assets/styles/whatwedo.module.css";
 
-export function WhatWeDo() {
+export function WhatWeDoSub() {
   return (
     <>
-      <Header></Header>
       <SubHeader>
         <span>WHAT WE DO</span>
         <span>
@@ -19,17 +16,17 @@ export function WhatWeDo() {
           trusted development partner.
         </span>
       </SubHeader>
-      <main className={classes.WhatWeDoMain}>
-        <section className={classes.section0}>
+        <section className={styles.section0}>
           <h1>ELEVATE YOUR INVESTMENT WITH OUR EXPERTISE</h1>
           <img src="../public/images/projects2/whatwedopic/office5.jpg" />
         </section>
-        <section className={classes.section1}>
+        <hr />
+        <section className={styles.section1}>
           <h1>THE INDIGO ADVANTAGE</h1>
-          <div className={classes.TheIndigoAdvantageSection}>
+          <div className={styles.TheIndigoAdvantageSection}>
             <h3>INDUSTRY PARTNERSHIP</h3>
             <img
-              className={classes.leftArrowSvg}
+              className={styles.leftArrowSvg}
               src="../public/images/rightarrow.svg"
               alt=""
             />
@@ -40,10 +37,10 @@ export function WhatWeDo() {
               sectors.
             </p>
           </div>
-          <div className={classes.TheIndigoAdvantageSection}>
+          <div className={styles.TheIndigoAdvantageSection}>
             <h3>CLIENT SUCCESS STORIES</h3>
             <img
-              className={classes.leftArrowSvg}
+              className={styles.leftArrowSvg}
               src="../public/images/rightarrow.svg"
               alt=""
             />
@@ -53,10 +50,10 @@ export function WhatWeDo() {
               long-term relationships built on trust and satisfaction.
             </p>
           </div>
-          <div className={classes.TheIndigoAdvantageSection}>
+          <div className={styles.TheIndigoAdvantageSection}>
             <h3>MARKET INTELLIGENCE</h3>
             <img
-              className={classes.leftArrowSvg}
+              className={styles.leftArrowSvg}
               src="../public/images/rightarrow.svg"
               alt=""
             />
@@ -69,8 +66,9 @@ export function WhatWeDo() {
             </p>
           </div>
         </section>
-        <section className={classes.section2}>
-          <div className={classes.section2Wrapper1}>
+        <hr />
+        <section className={styles.section2}>
+          <div className={styles.section2Wrapper1}>
             <h1>EXPERT GUIDANCE</h1>
             <p>
               Overcome development challenges with specialized advice. An
@@ -88,7 +86,7 @@ export function WhatWeDo() {
               master plan and dive
             </p>
           </div>
-          <div className={classes.section2Wrapper2}>
+          <div className={styles.section2Wrapper2}>
             <h1>INFORMED DECISION-MAKING</h1>
             <p>
               Simplify details for clear decision-making at every stage.
@@ -101,11 +99,9 @@ export function WhatWeDo() {
             </p>
           </div>
         </section>
-        <section className={classes.section3}>
+        {/* <section className={styles.section3}>
           <Carousel images={image} />
-        </section>
-      </main>
-      <Footer></Footer>
+        </section> */}
     </>
   );
 }

@@ -1,4 +1,6 @@
-import { Header } from "../components/ui/header";
+/** @format */
+
+import { Header } from "../components/ui/header/header";
 import { Footer } from "../components/ui/footer";
 import { Overlay } from "../components/ui/overlay";
 import { Button } from "../components/button";

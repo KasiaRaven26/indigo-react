@@ -9,28 +9,31 @@ import { WhoWeArePage } from "./pages/WhoWeAre";
 import { WhatWeDo } from "./pages/WhatWeDo";
 import { SignInPage } from "./pages/SignInPage";
 import { RequestAccess } from "./pages/RequestAccess";
-
+import { AuthProvider } from "./contexts/AuthContext";
+import { RegisterPage } from "./pages/RegisterPage";
+import { PropertiesPage } from "./pages/PropertiesPage";
+import { ConsultingPage } from "./pages/ConsultingPage";
+import LogOut from "./components/LogOut";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Homepage />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/who-we-are" element={<WhoWeArePage />} />
-        <Route path="/what-we-do" element={<WhatWeDo />} />
-        <Route path="/sign-in" element={<SignInPage />} />
-        <Route path="/request-access" element={<RequestAccess />} />
-        {/* <Route path="/client">
-          <Route index={true} element={<ClientHomePage />}></Route>
-          <Route path="your-messages" element={<YourMessages />} />
-          <Route path="cover-letter" element={<CoverLetter />} />
-          <Route path="your-details" element={<YourDetails />} />
-          <Route path="resume" element={<Resume />} />
-        </Route> */}
-      </Routes>
-    </BrowserRouter>
+    <AuthProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/who-we-are" element={<WhoWeArePage />} />
+          <Route path="/what-we-do" element={<WhatWeDo />} />
+          <Route path="/sign-in" element={<SignInPage />} />
+          <Route path="/login" element={<RequestAccess />} />
+          <Route path="/register" element={<RegisterPage />} />
+          <Route path="/consulting" element={<ConsultingPage />} />
+          <Route path="/properties" element={<PropertiesPage />} />
+          <Route path="logout" element={<LogOut />} />
+        </Routes>
+      </BrowserRouter>
+    </AuthProvider>
   );
 }
 

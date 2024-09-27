@@ -5,21 +5,8 @@ body {
   margin: 0;
   font-size: 16px;
 }
-
-h1 {
-  font-size: 2rem;
-}
-h2 {
-  font-size: 1.5rem;
-}
-
-@media (max-width: 1000px) {
-  html {
+@media only screen and (max-width: 600px) {
+  body {
     font-size: 12px;
   }
-}
-@media (max-width: 400px) {
-  html {
-    font-size: 8px;
   }
-}

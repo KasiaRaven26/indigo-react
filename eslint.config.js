@@ -36,6 +36,7 @@ export default [
         { allowConstantExport: true },
       ],
       "react/prop-types": 0,
+      "react/display-name": "off",
     },
   },
 ];
