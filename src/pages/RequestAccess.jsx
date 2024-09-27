@@ -5,6 +5,7 @@ import AuthContext from "src/contexts/AuthContext";
 import { users } from "src/data/users";
 import { Footer } from "src/components/ui/footer";
 import { Header } from "src/components/ui/header/header";
+import { SubmitButton } from "src/components/ui/buttons/submitButton";
 import classes from "../assets/styles/requestaccess.module.css";
 import headerStyles from "../assets/styles/Homepage.module.css";
 
@@ -71,7 +72,7 @@ export function RequestAccess() {
                 onChange={handleChange}
               />
             </div>
-            <input type="submit" />
+            <SubmitButton>Enter</SubmitButton>
           </form>
         </div>
       </div>

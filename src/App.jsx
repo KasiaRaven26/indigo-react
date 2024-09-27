@@ -13,6 +13,7 @@ import { AuthProvider } from "./contexts/AuthContext";
 import { RegisterPage } from "./pages/RegisterPage";
 import { PropertiesPage } from "./pages/PropertiesPage";
 import { ConsultingPage } from "./pages/ConsultingPage";
+import LogOut from "./components/LogOut";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route path="/register" element={<RegisterPage />} />
           <Route path="/consulting" element={<ConsultingPage />} />
           <Route path="/properties" element={<PropertiesPage />} />
+          <Route path="logout" element={<LogOut />} />
         </Routes>
       </BrowserRouter>
     </AuthProvider>

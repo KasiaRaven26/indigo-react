@@ -10,7 +10,7 @@ import headerStyles from "../assets/styles/Homepage.module.css";
 import { users } from "src/data/users";
 
 export function RegisterPage() {
-  const { user, setUser, login } = useContext(AuthContext);
+  const { user, setUser, login, setIsAuthenticated } = useContext(AuthContext);
 
   const navigate = useNavigate();
 
@@ -33,6 +33,7 @@ export function RegisterPage() {
     if (errors.invalidUserName == false && errors.invalidPassword == false) {
       setUser({ currentUser });
       login();
+      setIsAuthenticated(true);
       navigate("/");
     }
   };

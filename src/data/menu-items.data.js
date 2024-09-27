@@ -38,6 +38,10 @@ export const menuItemsData = [
     url: "/login",
   },
   {
+    title: "Logout",
+    url: "/logout",
+  },
+  {
     title: "Register",
     url: "/register",
   },
