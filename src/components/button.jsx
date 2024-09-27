@@ -1,7 +1,7 @@
 /** @format */
 import { Link } from "react-router-dom";
 import classes from "../assets/styles/button.module.css";
-export function Button({ children, onClick, to, type }) {
+export function Button({ children }) {
   return (
     <Link className={classes.link}>
       <div className={classes.wrapper}>

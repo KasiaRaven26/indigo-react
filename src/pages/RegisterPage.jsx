@@ -1,14 +1,19 @@
 /** @format */
 import { useContext, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import AuthContext from "src/contexts/AuthContext";
 import { Footer } from "src/components/ui/footer";
 import { Header } from "src/components/ui/header/header";
+import { SubmitButton } from "src/components/ui/buttons/submitButton";
 import styles from "../assets/styles/pages/RegisterPage.module.css";
 import headerStyles from "../assets/styles/Homepage.module.css";
 import { users } from "src/data/users";
 
 export function RegisterPage() {
-  const { setUser, login } = useContext(AuthContext);
+  const { user, setUser, login } = useContext(AuthContext);
+
+  const navigate = useNavigate();
+
   const [input, setInput] = useState({});
   const [checkedOne, setCheckedOne] = useState(false);
   const [checkedTwo, setCheckedTwo] = useState(false);
@@ -17,14 +22,18 @@ export function RegisterPage() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    const user = findUser();
-    if (!user) {
+    const currentUser = findUser();
+    if (!currentUser) {
       console.warn("User already exists");
     }
-    console.log(errors);
     const password = validatePassword();
     if (!password) {
       console.warn("Passwords do not match");
+    }
+    if (errors.invalidUserName == false && errors.invalidPassword == false) {
+      setUser({ currentUser });
+      login();
+      navigate("/");
     }
   };
 
@@ -35,14 +44,12 @@ export function RegisterPage() {
     if (userInDb) {
       console.log(errors);
 
-      // setErrors({ ...errors, invalidUserName: true });
       setErrors((previousState) => ({
         ...previousState,
         invalidUserName: true,
       }));
       return null;
     } else {
-      // setErrors({ ...errors, invalidUserName: false });
       setErrors((previousState) => ({
         ...previousState,
         invalidUserName: false,
@@ -84,6 +91,20 @@ export function RegisterPage() {
     console.log(input);
   };
 
+  function ErrorList() {
+    let keys = Object.keys(errors);
+
+    return (
+      <ul className={styles.errorList}>
+        {keys.map((error) => (
+          <li key={error}>
+            <p>{error}</p>
+          </li>
+        ))}
+      </ul>
+    );
+  }
+
   return (
     <>
       <div className={styles.hero}>
@@ -104,7 +125,6 @@ export function RegisterPage() {
                 onChange={handleChange}
               />
             </div>
-            {errors.invalidUserName ? <p>User name already exists</p> : null}
             <div className={styles.formItemContainer}>
               <label>Password</label>
               <input
@@ -123,7 +143,6 @@ export function RegisterPage() {
                 onChange={handleChange}
               />
             </div>
-            {errors.invalidPassword ? <p>Password invalid</p> : null}
             <div className={styles.formItemContainer}>
               <label>Email:</label>
               <input
@@ -133,14 +152,13 @@ export function RegisterPage() {
                 onChange={handleChange}
               />
             </div>
-            <div className={styles.formCheckboxContainer}>
+            {/* <div className={styles.formCheckboxContainer}>
               <label>Request access to Indigo Properties</label>
               <input
                 name="checkbox1"
                 type="checkbox"
                 label="checkbox1"
                 value={checkedOne}
-                // checked={input.checkbox1 | ""}
                 onChange={handleChange}
               />
             </div>
@@ -153,8 +171,14 @@ export function RegisterPage() {
                 type="checkbox"
                 onChange={handleChange}
               />
+            </div> */}
+            {/* <button type="submit" className={styles.submitButton}>
+              Submit
+            </button> */}
+            <div className={styles.submitButtonContainer}>
+              <SubmitButton type="submit">SUBMIT</SubmitButton>
             </div>
-            <button type="submit">Submit</button>
+            {errors ? <ErrorList /> : null}
           </form>
         </div>
       </div>

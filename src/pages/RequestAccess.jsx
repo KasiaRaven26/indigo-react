@@ -1,8 +1,6 @@
 /** @format */
 import { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
-// import { Navigate } from "react-router-dom";
-// import { Redirect } from "react-router-dom";
 import AuthContext from "src/contexts/AuthContext";
 import { users } from "src/data/users";
 import { Footer } from "src/components/ui/footer";
@@ -34,13 +32,6 @@ export function RequestAccess() {
     console.log(user);
     if (result) {
       login();
-      // if (loginPath) {
-      //   setLoginPath("");
-      //   console.log(`/${loginPath}`);
-      //   navigate(`${loginPath}`);
-      // } else {
-      //   navigate("/");
-      // }
       navigate("/");
     }
   };
