@@ -26,15 +26,6 @@
       "password": "password1",
       "propertyAccess": false,
       "consultingAccess": true
-    },
-    {
-      "id": "ded3",
-      "userName": "user name 5",
-      "firstName": "John",
-      "lastName": "Smith",
-      "password": "pword",
-      "propertyAccess": false,
-      "consultingAccess": false
     }
   ]
 }

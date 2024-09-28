@@ -1,5 +1,5 @@
 /** @format */
-import { useContext, useState } from "react";
+import { useContext, useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import AuthContext from "src/contexts/AuthContext";
 import { Footer } from "src/components/ui/footer";
@@ -21,6 +21,15 @@ export function RegisterPage() {
   const [newUser, setNewUser] = useState({});
   const [errors, setErrors] = useState({});
 
+  useEffect(() => {
+    if (errors.invalidUserName == false && errors.invalidPassword == false) {
+      login();
+      setIsAuthenticated(true);
+      register();
+      navigate("/");
+    }
+  });
+
   const handleSubmit = (event) => {
     event.preventDefault();
     const currentUser = findUser();
@@ -30,13 +39,6 @@ export function RegisterPage() {
     const password = validatePassword();
     if (!password) {
       console.warn("Passwords do not match");
-    }
-    if (errors.invalidUserName == false && errors.invalidPassword == false) {
-      setUser({ currentUser });
-      login();
-      setIsAuthenticated(true);
-      register();
-      navigate("/");
     }
   };
 
@@ -57,6 +59,7 @@ export function RegisterPage() {
         ...previousState,
         invalidUserName: false,
       }));
+      console.warn("Else", errors);
       setNewUser({ ...input, userName: input.userName });
       return newUser;
     }
@@ -71,10 +74,12 @@ export function RegisterPage() {
       return false;
     } else {
       setCheckedOne({ ...input, password: input.password });
+      console.warn("PASSWORD", errors);
       setErrors((previousState) => ({
         ...previousState,
         invalidPassword: false,
       }));
+      console.warn("PASSWORD", errors);
       return true;
     }
   };
@@ -91,7 +96,6 @@ export function RegisterPage() {
       setCheckedTwo(updatedCheckbox);
     }
     setInput((values) => ({ ...values, [name]: value }));
-    console.log(input);
   };
 
   function ErrorList() {
@@ -108,6 +112,7 @@ export function RegisterPage() {
     );
   }
 
+  console.log(errors);
   return (
     <>
       <div className={styles.hero}>
@@ -181,7 +186,9 @@ export function RegisterPage() {
             <div className={styles.submitButtonContainer}>
               <SubmitButton type="submit">SUBMIT</SubmitButton>
             </div>
-            {errors ? <ErrorList /> : null}
+            {errors.invalidPassword || errors.invalidUserName ? (
+              <ErrorList />
+            ) : null}
           </form>
         </div>
       </div>
