@@ -10,7 +10,8 @@ import headerStyles from "../assets/styles/Homepage.module.css";
 import { users } from "src/data/users";
 
 export function RegisterPage() {
-  const { user, setUser, login, setIsAuthenticated } = useContext(AuthContext);
+  const { user, setUser, login, setIsAuthenticated, register } =
+    useContext(AuthContext);
 
   const navigate = useNavigate();
 
@@ -34,6 +35,7 @@ export function RegisterPage() {
       setUser({ currentUser });
       login();
       setIsAuthenticated(true);
+      register();
       navigate("/");
     }
   };
@@ -153,7 +155,7 @@ export function RegisterPage() {
                 onChange={handleChange}
               />
             </div>
-            {/* <div className={styles.formCheckboxContainer}>
+            <div className={styles.formCheckboxContainer}>
               <label>Request access to Indigo Properties</label>
               <input
                 name="checkbox1"
@@ -172,7 +174,7 @@ export function RegisterPage() {
                 type="checkbox"
                 onChange={handleChange}
               />
-            </div> */}
+            </div>
             {/* <button type="submit" className={styles.submitButton}>
               Submit
             </button> */}
