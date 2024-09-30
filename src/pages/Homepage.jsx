@@ -42,7 +42,7 @@ export function Homepage() {
           alt=""
         />
       </section>
-      <section id="section-3">
+      {/* <section id="section-3">
         <h1>PROJECTS</h1>
         <div className={classes.imageContainer}>
           <img
@@ -67,7 +67,7 @@ export function Homepage() {
           />
         </div>
         <Button to="/projects">ALL PROJECTS</Button>
-      </section>
+      </section> */}
 
       <Footer></Footer>
     </>

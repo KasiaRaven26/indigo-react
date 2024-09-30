@@ -6,34 +6,30 @@ import { users } from "src/data/users";
 import { Footer } from "src/components/ui/footer";
 import { Header } from "src/components/ui/header/header";
 import { SubmitButton } from "src/components/ui/buttons/submitButton";
+import { validateLogin } from "src/utils/authValidation";
 import classes from "../assets/styles/requestaccess.module.css";
 import headerStyles from "../assets/styles/Homepage.module.css";
 
 export function RequestAccess() {
-  const { setUser, login, loginPath, setLoginPath } = useContext(AuthContext);
+  const { login } = useContext(AuthContext);
+  const [error, setError ] = useState("")
   const navigate = useNavigate();
 
   const [input, setInput] = useState({});
 
-  const findUser = () => {
-    const user = users.find((element) => element.userName === input.userName);
-    return user;
-  };
-
-  const checkPassword = (user) => {
-    const result = user.password === input.password;
-    return result;
-  };
-
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    var user = findUser();
-
-    var result = checkPassword(user);
-    console.log(user);
-    if (result) {
-      login();
-      navigate("/");
+    let user;
+    try {
+      user = await validateLogin(input.userName, input.password);
+      if (user) {
+        login(user);
+        navigate("/");
+        console.log(user);
+      }
+    } catch (error) {
+      setError(error.message);
+      console.log(error.message);
     }
   };
 
@@ -76,6 +72,7 @@ export function RequestAccess() {
               <SubmitButton type="submit">SUBMIT</SubmitButton>
             </div>
           </form>
+          {error && <p>{error}</p>}
         </div>
       </div>
       <Footer></Footer>

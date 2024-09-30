@@ -28,8 +28,9 @@ export function AuthProvider({ children }) {
     setIsAuthenticated(true);
   };
 
-  const login = () => {
+  const login = (user) => {
     console.log("logged in!!!!");
+    setUser(user)
     setIsLoggedIn(true);
   };
 
