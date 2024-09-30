@@ -72,7 +72,9 @@ export function RequestAccess() {
                 onChange={handleChange}
               />
             </div>
-            <SubmitButton>Enter</SubmitButton>
+            <div className={classes.submitButtonContainer}>
+              <SubmitButton type="submit">SUBMIT</SubmitButton>
+            </div>
           </form>
         </div>
       </div>

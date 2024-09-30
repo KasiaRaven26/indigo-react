@@ -46,8 +46,7 @@
 
 .formcontainer {
   background-color: #d9d9d9b2;
-  width: 60vh;
-  border-radius: 5%;
+  width: 60vw;
   padding-bottom: 5vh;
 }
 .logoIndigo {
@@ -72,4 +71,9 @@
   font: inherit;
   cursor: pointer;
   border: none;
+}
+
+.submitButtonContainer {
+  margin: 2vh;
+  display: flex;
 }

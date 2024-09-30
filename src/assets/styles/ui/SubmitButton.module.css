@@ -1,17 +1,23 @@
 .button {
     background: none;
+    display: flex;
     color: inherit;
     padding: 0;
     font: inherit;
     cursor: pointer;
-    border: none;
+    border: 1px solid #505050;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 60px;
+    gap: 5px;
   }
   
   .arrow {
     height: 20px;
   }
   
-  .wrapper {
+  /* .wrapper {
     border: 1px solid #505050;
     width: 200px;
     height: 60px;
@@ -19,7 +25,7 @@
     align-items: center;
     justify-content: center;
     gap: 5px;
-  }
+  } */
   
   .wrapper:hover {
     cursor: pointer;

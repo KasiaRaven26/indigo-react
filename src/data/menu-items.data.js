@@ -34,15 +34,21 @@ export const menuItemsData = [
     url: "/contact",
   },
   {
-    title: "Login",
-    url: "/login",
-  },
-  {
-    title: "Logout",
-    url: "/logout",
-  },
-  {
-    title: "Register",
-    url: "/register",
+    title: "Account",
+    url: "/contact",
+    submenu: [
+      {
+        title: "Login",
+        url: "/login",
+      },
+      {
+        title: "Logout",
+        url: "/logout",
+      },
+      {
+        title: "Register",
+        url: "/register",
+      },
+    ],
   },
 ];
