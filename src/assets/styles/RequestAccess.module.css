@@ -29,7 +29,7 @@
     url("../public//images/greece7.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 90%;
 }
 .hero:after {
   content: "";
@@ -81,4 +81,8 @@
 .submitButtonContainer {
   margin: 2vh;
   display: flex;
+}
+
+.registerPageContainer {
+  height: 100vh;
 }

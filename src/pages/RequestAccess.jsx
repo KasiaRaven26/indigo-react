@@ -1,6 +1,7 @@
 /** @format */
 import { useContext, useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { NavLink } from "src/components/nav-link";
 import AuthContext from "src/contexts/AuthContext";
 import { Footer } from "src/components/ui/footer";
 import { Header } from "src/components/ui/header/header";
@@ -58,41 +59,46 @@ export function RequestAccess() {
   console.log(loginPath);
   return (
     <>
-      <div className={classes.hero}>
-        <Header className={headerStyles.header}></Header>
-        <div className={classes.formcontainer}>
-          <img
-            className={classes.logoIndigo}
-            src="./images/logoindigo.png"
-          ></img>
-          <h1>Login {heading()}</h1>
-          <form onSubmit={handleSubmit} className={classes.loginForm}>
-            <div className={classes.formItemContainer}>
-              <label>User name:</label>
-              <input
-                type="text"
-                name="userName"
-                value={input.userName || ""}
-                onChange={handleChange}
-              />
-            </div>
-            <div className={classes.formItemContainer}>
-              <label>Password:</label>
-              <input
-                type="text"
-                name="password"
-                value={input.password || ""}
-                onChange={handleChange}
-              />
-            </div>
-            <div className={classes.submitButtonContainer}>
-              <SubmitButton type="submit">SUBMIT</SubmitButton>
-            </div>
-          </form>
-          {error && <p>{error}</p>}
+      <div className={classes.registerPageContainer}>
+        <div className={classes.hero}>
+          <Header className={headerStyles.header}></Header>
+          <div className={classes.formcontainer}>
+            <img
+              className={classes.logoIndigo}
+              src="./images/logoindigo.png"
+            ></img>
+            <h1>Login {heading()}</h1>
+            <form onSubmit={handleSubmit} className={classes.loginForm}>
+              <div className={classes.formItemContainer}>
+                <label>User name:</label>
+                <input
+                  type="text"
+                  name="userName"
+                  value={input.userName || ""}
+                  onChange={handleChange}
+                />
+              </div>
+              <div className={classes.formItemContainer}>
+                <label>Password:</label>
+                <input
+                  type="text"
+                  name="password"
+                  value={input.password || ""}
+                  onChange={handleChange}
+                />
+              </div>
+              <div className={classes.submitButtonContainer}>
+                <SubmitButton type="submit">SUBMIT</SubmitButton>
+              </div>
+            </form>
+            <NavLink to="/register">
+              <h2>Register with Indigo</h2>
+            </NavLink>
+            {error && <p>{error}</p>}
+          </div>
         </div>
+        <Footer></Footer>
       </div>
-      <Footer></Footer>
     </>
   );
 }

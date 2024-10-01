@@ -91,8 +91,6 @@ export function RegisterPage() {
       errors.push(userNameError.message);
     }
 
-    console.log(errors);
-
     return (
       <ul className={styles.errorList}>
         {errors.map((error) => (
@@ -103,7 +101,7 @@ export function RegisterPage() {
       </ul>
     );
   }
-  ErrorList();
+  
   return (
     <>
       <div className={styles.registerPageContainer}>
