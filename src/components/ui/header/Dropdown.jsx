@@ -1,5 +1,7 @@
 /** @format */
 import { NavLink } from "src/components/nav-link";
+import { useContext } from "react";
+import AuthContext from "src/contexts/AuthContext";
 import classes from "../../../assets/styles/ui/header.module.css";
 
 export function Dropdown({ submenus, dropdown, setDropdown }) {
@@ -7,6 +9,19 @@ export function Dropdown({ submenus, dropdown, setDropdown }) {
   //   const handleMouseLeave = () => {
   //     setDropdown(!dropdown);
   //   };
+
+  const { isLoggedIn } = useContext(AuthContext);
+
+  let data;
+  if (isLoggedIn) {
+    data = submenus.filter((item) => {
+      return item.title !== "Login";
+    });
+  } else {
+    data = submenus.filter((item) => {
+      return item.title !== "Logout";
+    });
+  }
   return (
     <ul
       className={
@@ -16,7 +31,7 @@ export function Dropdown({ submenus, dropdown, setDropdown }) {
       //     handleMouseLeave();
       //   }}
     >
-      {submenus.map((submenu, index) => (
+      {data.map((submenu, index) => (
         <li key={index} className={classes.menuItems}>
           <NavLink to={submenu.url}>{submenu.title}</NavLink>
         </li>

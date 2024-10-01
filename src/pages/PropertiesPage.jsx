@@ -2,8 +2,9 @@
 
 import { Footer } from "../components/ui/footer";
 import { Header } from "../components/ui//header/header";
+import withAuthentication from "src/components/authentication/withAuthentication";
 
-export function PropertiesPage() {
+export const PropertiesPage = withAuthentication(() => {
   return (
     <>
       <Header></Header>
@@ -11,4 +12,4 @@ export function PropertiesPage() {
       <Footer></Footer>
     </>
   );
-}
+});

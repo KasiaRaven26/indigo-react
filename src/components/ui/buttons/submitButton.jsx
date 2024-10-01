@@ -6,8 +6,8 @@ export function SubmitButton({ children }) {
     <div className={classes.wrapper}>
       <button className={classes.button} type="submit">
         {children}
+        <img className={classes.arrow} src="./images/arrow-right.png"></img>
       </button>
-      <img className={classes.arrow} src="./images/arrow-right.png"></img>
     </div>
   );
 }
