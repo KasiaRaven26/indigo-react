@@ -1,5 +1,5 @@
 /** @format */
-import { useContext, useState } from "react";
+import { useContext, useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import AuthContext from "src/contexts/AuthContext";
 import { users } from "src/data/users";
@@ -11,11 +11,18 @@ import classes from "../assets/styles/requestaccess.module.css";
 import headerStyles from "../assets/styles/Homepage.module.css";
 
 export function RequestAccess() {
-  const { login } = useContext(AuthContext);
-  const [error, setError ] = useState("")
+  const { login, loginPath, setLoginPath } = useContext(AuthContext);
+  const [error, setError] = useState("");
   const navigate = useNavigate();
 
   const [input, setInput] = useState({});
+
+  useEffect(() => {
+    return () => {
+      console.log("unmount");
+      setLoginPath(null);
+    };
+  }, []);
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -24,8 +31,12 @@ export function RequestAccess() {
       user = await validateLogin(input.userName, input.password);
       if (user) {
         login(user);
-        navigate("/");
-        console.log(user);
+        if (loginPath) {
+          let navigateTo = loginPath;
+          navigate(navigateTo);
+        } else {
+          navigate("/");
+        }
       }
     } catch (error) {
       setError(error.message);

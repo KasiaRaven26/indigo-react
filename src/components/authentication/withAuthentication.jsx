@@ -1,7 +1,7 @@
 /** @format */
 
 import { useContext } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { NotLoggedInPage } from "src/pages/NotLoggedInPage";
 import AuthContext from "src/contexts/AuthContext";
 import { NotAuthenticatedPage } from "src/pages/NotAuthenticatedPage";
@@ -10,6 +10,7 @@ const withAuthentication = (WrappedComponent) => {
   return (props) => {
     const { user, isLoggedIn, isAuthenticated, setLoginPath } =
       useContext(AuthContext);
+    const navigate = useNavigate();
     console.log(user, "User");
     console.log(isLoggedIn, "is logged in");
     const location = useLocation();
@@ -18,6 +19,8 @@ const withAuthentication = (WrappedComponent) => {
 
     if (!isLoggedIn) {
       setLoginPath(path);
+      navigate("/login");
+
       return <NotLoggedInPage />;
     }
     if (!isAuthenticated) {
