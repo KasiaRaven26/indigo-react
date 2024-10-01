@@ -2,7 +2,6 @@
 import { useContext, useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import AuthContext from "src/contexts/AuthContext";
-import { users } from "src/data/users";
 import { Footer } from "src/components/ui/footer";
 import { Header } from "src/components/ui/header/header";
 import { SubmitButton } from "src/components/ui/buttons/submitButton";
@@ -14,12 +13,10 @@ export function RequestAccess() {
   const { login, loginPath, setLoginPath } = useContext(AuthContext);
   const [error, setError] = useState("");
   const navigate = useNavigate();
-
   const [input, setInput] = useState({});
 
   useEffect(() => {
     return () => {
-      console.log("unmount");
       setLoginPath(null);
     };
   }, []);
@@ -40,7 +37,6 @@ export function RequestAccess() {
       }
     } catch (error) {
       setError(error.message);
-      console.log(error.message);
     }
   };
 
@@ -50,6 +46,16 @@ export function RequestAccess() {
     setInput((values) => ({ ...values, [name]: value }));
   };
 
+  const heading = () => {
+    if (loginPath == "/consulting") {
+      return "to access Indigo consulting";
+    } else if (loginPath == "/properties") {
+      return "to access Indigo properties";
+    } else {
+      return null;
+    }
+  };
+  console.log(loginPath);
   return (
     <>
       <div className={classes.hero}>
@@ -59,7 +65,7 @@ export function RequestAccess() {
             className={classes.logoIndigo}
             src="./images/logoindigo.png"
           ></img>
-          <h1>Login</h1>
+          <h1>Login {heading()}</h1>
           <form onSubmit={handleSubmit} className={classes.loginForm}>
             <div className={classes.formItemContainer}>
               <label>User name:</label>
