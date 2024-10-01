@@ -2,6 +2,7 @@
 
 import { createContext, useState } from "react";
 import axios from "axios";
+
 const AuthContext = createContext();
 
 export function AuthProvider({ children }) {
@@ -23,12 +24,16 @@ export function AuthProvider({ children }) {
         consultingAccess: false,
       })
     );
+    login();
+    setIsAuthenticated(true);
   };
 
-  const login = () => {
+  const login = (user) => {
     console.log("logged in!!!!");
+    setUser(user)
     setIsLoggedIn(true);
   };
+
   const logout = () => setIsLoggedIn(false);
 
   return (
