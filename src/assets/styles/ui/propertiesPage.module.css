@@ -1,0 +1,18 @@
+.pdfIcon {
+  height: 50px;
+}
+
+.image {
+  height: 300px;
+  width: auto;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.iconWrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}

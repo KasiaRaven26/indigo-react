@@ -23,18 +23,18 @@ export function Homepage() {
         />
         <div className={classes.paragraph}>
           <h1>TITLE 1</h1>
-          <h2>Development consultancy</h2>
-          <h2>Development opportunities sourcing</h2>
-          <h2>Development project managment</h2>
+          <h2>Development Consultancy</h2>
+          <h2>Development Opportunities Sourcing</h2>
+          <h2>Development Project Managment</h2>
         </div>
       </section>
       <section id="section-2">
         <div className={classes.paragraph}>
           <h1>TITLE 2</h1>
-          <h2>Market analysis</h2>
-          <h2>Redevelopment-development project</h2>
-          <h2>Property managment</h2>
-          <h2>Legal & notarial services</h2>
+          <h2>Market Analysis</h2>
+          <h2>Redevelopment-Development Project</h2>
+          <h2>Property Managment</h2>
+          <h2>Legal & Notarial services</h2>
         </div>
         <img
           className="section-2-image"

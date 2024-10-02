@@ -13,9 +13,6 @@ export function WhoWeArePage() {
         <section className={classes.section1}>
           <WhoWeAreSub />
         </section>
-        <section className={classes.section2}>
-          <WhatWeDoSub />
-        </section>
       </main>
       <Footer></Footer>
     </div>
