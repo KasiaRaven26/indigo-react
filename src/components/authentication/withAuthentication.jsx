@@ -18,10 +18,10 @@ const withAuthentication = (WrappedComponent) => {
       navigate("/login");
     }
 
-    if (!isAuthenticated) {
-      setLoginPath(path);
-      return <NotAuthenticatedPage />;
-    }
+    // if (!isAuthenticated) {
+    //   setLoginPath(path);
+    //   return <NotAuthenticatedPage />;
+    // }
 
     return <WrappedComponent {...props} />;
   };

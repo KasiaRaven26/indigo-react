@@ -1,11 +1,11 @@
 .overlay {
   border: 0.5px solid rgba(217, 217, 217, 0.686);
-  background-color: rgba(217, 217, 217, 0.555);
+  background-color: #faefe868;
   width: 90vh;
   color: #434242;
   /* font-size: 26px; */
   font-style: normal;
   font-weight: 200;
   line-height: normal;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.16em;
 }
