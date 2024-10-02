@@ -81,8 +81,18 @@
 .submitButtonContainer {
   margin: 2vh;
   display: flex;
+  width: 200px;
+  height: 50px;
 }
 
 .registerPageContainer {
   height: 100vh;
 }
+
+@media only screen and (max-width: 600px) {
+  .logoIndigo {
+    height: 10rem;
+    width: auto;
+  }
+}
+

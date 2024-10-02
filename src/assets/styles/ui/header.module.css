@@ -19,6 +19,7 @@
     position: relative;
     display: block;
     text-decoration: none;
+    /* width: 100%; */
 }
 
 .desktopNav .dropdown.show {
@@ -37,6 +38,7 @@
     align-items: center;
     flex-wrap: wrap;
     list-style: none;
+    /* width: 100%; */
 }
 
 .menuItems button{
@@ -46,8 +48,16 @@
     font: inherit;
     cursor: pointer;
 }
+
+.menuItems h3{
+    color: black;
+    margin: 0;
+}
 .ulWrapper {
     height: 100%;
+    /* flex: 1 1 300px; */
+    /* width: 100%;
+    flex: 1 1 300px; */
 }
 
 .desktopNav a {

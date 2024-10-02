@@ -8,24 +8,20 @@
     border: 1px solid #505050;
     align-items: center;
     justify-content: center;
-    width: 200px;
-    height: 60px;
+    width: 100%;
+    height: 100%;
     gap: 5px;
+  }
+  
+  .button:hover {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    border: 2px solid #505050;
   }
   
   .arrow {
     height: 20px;
   }
   
-  /* .wrapper {
-    border: 1px solid #505050;
-    width: 200px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-  } */
   
   .wrapper:hover {
     cursor: pointer;
@@ -35,3 +31,8 @@
     color: #505050;
   }
   
+  @media only screen and (max-width: 600px) {
+    .arrow {
+      height: 10px
+    }
+  }

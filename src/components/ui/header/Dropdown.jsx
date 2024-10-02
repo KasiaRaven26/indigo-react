@@ -25,15 +25,14 @@ export function Dropdown({ submenus, dropdown, setDropdown }) {
   return (
     <ul
       className={
+        // dropdown ? `${classes.show} ${classes.dropdown}` : `${classes.dropdown}`
         dropdown ? `${classes.show} ${classes.dropdown}` : `${classes.dropdown}`
       }
-      //   onMouseLeave={() => {
-      //     handleMouseLeave();
-      //   }}
+
     >
       {data.map((submenu, index) => (
         <li key={index} className={classes.menuItems}>
-          <NavLink to={submenu.url}>{submenu.title}</NavLink>
+          <NavLink to={submenu.url}><h3>{submenu.title}</h3></NavLink>
         </li>
       ))}
     </ul>
