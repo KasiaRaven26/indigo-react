@@ -112,3 +112,33 @@ input[type="checkbox"] {
 }
 
 
+@media only screen and (max-width: 600px) {
+  input[type="text"] {
+    border: 1px solid;
+    height: 2rem;
+    width: 100%;
+    background-color: #d5dfe1;
+    color: #505050;
+    border-radius: 4px;
+    padding-block: 0;
+    padding-inline: 0;
+  
+  }
+  input[type="email"] {
+    border: 1px solid;
+    height: 2rem;
+    width: 100%;
+    background-color: #d5dfe1;
+    color: #505050;
+    border-radius: 4px;
+    padding-block: 0;
+    padding-inline: 0;
+  
+  }
+
+  .hero-contents {
+    width:100%
+  }
+}
+
+

@@ -3,9 +3,18 @@
   background-color: #faefe868;
   width: 90vh;
   color: #434242;
-  /* font-size: 26px; */
   font-style: normal;
   font-weight: 200;
   line-height: normal;
   letter-spacing: 0.16em;
+}
+
+@media only screen and (max-width: 600px) {
+  .overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 30vh;
+    width: 100%;
+  }
 }
