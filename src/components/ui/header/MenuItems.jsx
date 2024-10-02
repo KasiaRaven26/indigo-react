@@ -19,7 +19,8 @@ export function MenuItems({ items }) {
             >
               <h3>{items.title}</h3>
             </button>
-            <Dropdown submenus={items.submenu} dropdown={dropdown} />
+            {dropdown && <Dropdown submenus={items.submenu} dropdown={dropdown} />}
+            {/* <Dropdown submenus={items.submenu} dropdown={dropdown} /> */}
           </>
         ) : (
           <NavLink to={items.url}>

@@ -16,6 +16,10 @@
     width: 40%;
 }
 
+.formItemContainer label{
+  font-size:x-large;
+  }
+
 .formCheckboxContainer {
     display: flex;
 }
@@ -94,5 +98,14 @@
     height: 10rem;
     width: auto;
   }
+  .formItemContainer label{
+    font-size:medium;
+    }
+    .submitButtonContainer {
+      margin: 2vh;
+      display: flex;
+      width: 40%;
+      height: 2rem;
+    }
 }
 
