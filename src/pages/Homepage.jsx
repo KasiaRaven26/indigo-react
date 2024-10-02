@@ -22,7 +22,7 @@ export function Homepage() {
           alt=""
         />
         <div className={classes.paragraph}>
-          <h1>TITLE 1</h1>
+          <h1>WHAT WE OFFER</h1>
           <h2>Development Consultancy</h2>
           <h2>Development Opportunities Sourcing</h2>
           <h2>Development Project Managment</h2>
@@ -30,7 +30,6 @@ export function Homepage() {
       </section>
       <section id="section-2">
         <div className={classes.paragraph}>
-          <h1>TITLE 2</h1>
           <h2>Market Analysis</h2>
           <h2>Redevelopment-Development Project</h2>
           <h2>Property Managment</h2>
