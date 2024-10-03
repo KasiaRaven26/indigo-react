@@ -18,52 +18,60 @@ export function WhatWeDo() {
       </SubHeader>
       <main className={classes.WhatWeDoMain}>
         <section className={classes.section1}>
-          <h1>Development Opportunities Sourcing </h1>
-          <div className={classes.section1Container}>
-            <div className={classes.paragraphWrapper}>
+          <div className={classes.subSection}>
+            <h1>Development Opportunities Sourcing </h1>
+            <div className={classes.section1Container}>
+              <div className={classes.paragraphWrapper}>
+                <p>
+                  Sourcing Development Opportunities focuses on empowering
+                  investors by sourcing and selecting prime real estate
+                  opportunities based on specific criteria. 
+                </p>
+                <p>
+                  Through meticulous analysis, strategic planning, and seamless
+                  execution of real estate projects, Indigo aims to tailor
+                  propositions based on investor profile as portfolio, budgets,
+                  lock up period, etc. ensuring reliable project plans aligned
+                  with market demands and trends
+                </p>
+              </div>
+              <img src="../public/images/projects2/greece12.jpg" />
+            </div>
+          </div>
+          <div className={classes.subSection}>
+            <h1>Development Consultancy</h1>
+            <div className={classes.section2Container}>
+              <img src="../public/images/projects2/handshakecrop.jpg" />
+              <div className={classes.paragraphWrapperRight}>
+                <p>
+                  Indigo offers expert guidance, insights from the knowledge
+                  economy, strategic planning, informed decision-making support,
+                  and aims to be a trusted development partner.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className={classes.subSection}>
+            <h1>Market Analysis</h1>
+            <div className={classes.paragraphWrapperCentre}>
               <p>
-                Sourcing Development Opportunities focuses on empowering
-                investors by sourcing and selecting prime real estate
-                opportunities based on specific criteria. 
+                Integrated with our consultancy and project management services,
+                we provide comprehensive support from inception to project
+                delivery, empowering investors to make informed decisions and
+                maximize their investments
               </p>
               <p>
-                Through meticulous analysis, strategic planning, and seamless
-                execution of real estate projects, Indigo aims to tailor
-                propositions based on investor profile as portfolio, budgets,
-                lock up period, etc. ensuring reliable project plans aligned
-                with market demands and trends
+                Our company conducts comprehensive market analyses, providing
+                invaluable insights into residential development trends.
+              </p>
+              <p>
+                Leveraging this data, we offer tailored studies to potential
+                investors, guiding them through plot selection, potentialities
+                and development options. 
               </p>
             </div>
-
-            <img src="../public/images/projects2/greece12.jpg" />
           </div>
 
-          <h1>Development Consultancy</h1>
-          <div className={classes.section2Container}>
-            <img src="../public/images/projects2/handshake.jpg" />
-            <p>
-              Indigo offers expert guidance, insights from the knowledge
-              economy, strategic planning, informed decision-making support, and
-              aims to be a trusted development partner.
-            </p>
-          </div>
-
-          <h1>Market Analysis</h1>
-          <p>
-            Integrated with our consultancy and project management services, we
-            provide comprehensive support from inception to project delivery,
-            empowering investors to make informed decisions and maximize their
-            investments
-          </p>
-          <p>
-            Our company conducts comprehensive market analyses, providing
-            invaluable insights into residential development trends.
-          </p>
-          <p>
-            Leveraging this data, we offer tailored studies to potential
-            investors, guiding them through plot selection, potentialities and
-            development options. 
-          </p>
           <h1>Development Project Management</h1>
           <div className={classes.section3Container}>
             <div className={classes.paragraphWrapper}>
@@ -81,7 +89,7 @@ export function WhatWeDo() {
 
             <img
               className={classes.image3}
-              src="../public/images/projects2/construction.jpg"
+              src="../public/images/projects2/constructioncrop.jpg"
             />
           </div>
         </section>
@@ -89,23 +97,27 @@ export function WhatWeDo() {
         <section className={classes.section2}>
           <h1>Redevelopment – Development Projects</h1>
           <div className={classes.section4Container}>
-            <img src="../public/images/projects2/eliniko.jpg" />
-
-            <p>
-              Indigo's founder, an experienced investor, has led visionary
-              transformations in residential projects through previous
-              companies, focusing on flipping properties for substantial returns
-              on investment.  These endeavors illustrate a history of successful
-              ventures and innovative strategies in real estate.
-            </p>
-            <p>
-              Committed to revitalizing urban spaces, we've transformed ordinary
-              properties into luxurious minimalist havens, specializing
-              primarily in residential properties with ventures into commercial
-              projects.  Our proven portfolio spans Greece and beyond,
-              meticulously crafted for resale to showcase our commitment to
-              excellence and financial success.
-            </p>
+            <img
+              className={classes.image3}
+              src="../public/images/projects2/elinikocrop.jpg"
+            />
+            <div className={classes.paragraphWrapperRight}>
+              <p>
+                Indigo's founder, an experienced investor, has led visionary
+                transformations in residential projects through previous
+                companies, focusing on flipping properties for substantial
+                returns on investment.  These endeavors illustrate a history of
+                successful ventures and innovative strategies in real estate.
+              </p>
+              <p>
+                Committed to revitalizing urban spaces, we've transformed
+                ordinary properties into luxurious minimalist havens,
+                specializing primarily in residential properties with ventures
+                into commercial projects.  Our proven portfolio spans Greece and
+                beyond, meticulously crafted for resale to showcase our
+                commitment to excellence and financial success.
+              </p>
+            </div>
           </div>
         </section>
         <section className={classes.section3}>
@@ -117,22 +129,24 @@ export function WhatWeDo() {
               entrust us with the care and oversight of your investments.
             </p>
           </div>
-
-          {/* <Button>PROPERTIES</Button> */}
+          <Button>PROPERTIES</Button>
         </section>
         <section className={classes.section4}>
           <h1>Legal & Notarial Services</h1>
-          <img className src="../public/images/projects2/legal.jpg" />
+          <img className src="../public/images/projects2/legalcrop.jpg" />
           <h1>Residency - Golden Visa</h1>
           <div className={classes.section7Container}>
-            <p>
-              Unlock your path to residency in Greece with our Golden Visa
-              Consulting services. Let us guide you through the intricacies of
-              obtaining a residential visa, ensuring a smooth and efficient
-              process.  Contact us today for personalized assistance and expert
-              advice.
-            </p>
-            <img src="../public/images/projects2/golden.jpg" />
+            <div className={classes.paragraphWrapper}>
+              <p>
+                Unlock your path to residency in Greece with our Golden Visa
+                Consulting services. Let us guide you through the intricacies of
+                obtaining a residential visa, ensuring a smooth and efficient
+                process.  Contact us today for personalized assistance and
+                expert advice.
+              </p>
+            </div>
+
+            <img src="../public/images/projects2/goldencrop.jpg" />
           </div>
         </section>
       </main>

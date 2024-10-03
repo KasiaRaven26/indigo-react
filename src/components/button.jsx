@@ -1,6 +1,6 @@
 /** @format */
 import { Link } from "react-router-dom";
-import classes from "../assets/styles/button.module.css";
+import classes from "../assets/styles/Button.module.css";
 export function Button({ children }) {
   return (
     <Link className={classes.link}>

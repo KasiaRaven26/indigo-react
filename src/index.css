@@ -3,15 +3,29 @@ body {
   font-style: normal;
   color: #505050;
   margin: 0;
-  font-size: 16px;
+  font-size: 20px;
 }
 
-body,html {
+body,
+html {
   margin: 0;
   padding: 0;
+  --webkit-text-size-adjust: 12px;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+p {
+  font-size: 1.5em;
+  margin-top: 0;
+}
+section h1 {
+  font-size: 2em;
 }
 @media only screen and (max-width: 600px) {
   body {
     font-size: 12px;
   }
-  }
+}
