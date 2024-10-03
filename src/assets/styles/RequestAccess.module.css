@@ -1,3 +1,7 @@
+.header {
+  color: aliceblue;
+}
+
 .loginForm {
   display: flex;
   flex-direction: column;
@@ -16,8 +20,8 @@
   width: 40%;
 }
 
-.formItemContainer label{
-font-size:x-large;
+.formItemContainer label {
+  font-size: x-large;
 }
 .formCheckboxContainer {
   display: flex;
@@ -29,7 +33,7 @@ font-size:x-large;
   align-items: center;
   justify-content: space-around;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../public//images/greece7.jpg");
+    url("../public//images/picture3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 90%;
@@ -50,12 +54,11 @@ font-size:x-large;
 .formcontainer {
   background-color: #d9d9d9b2;
   width: 800px;
-  min-height: 55%;
+  min-height: 60%;
   max-width: 70vw;
   position: absolute;
   top: 25vh;
-  border-radius: 1%;
-  box-shadow: 2px 2px 2px;
+  box-shadow: 1px 1px 1px;
 }
 .logoIndigo {
   height: 12rem;

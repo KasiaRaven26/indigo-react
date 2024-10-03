@@ -20,7 +20,6 @@
 
 .section1 p {
   max-width: 80vh;
-  ;
   /* font-size: 22px;
   line-height: 2.5vh;
   letter-spacing: 0.08vh; */
@@ -31,6 +30,7 @@
   align-items: center;
   flex-wrap: wrap;
   padding: 2vh;
+  background-color: #faefe8;
 }
 
 .paragraphContainer {
@@ -42,9 +42,9 @@
   /* height: 20vh; */
 }
 .paragraphContainer p {
-  max-width: 60vw; 
+  max-width: 60vw;
   min-width: 20vw;
-} 
+}
 .whoWeAreMain span {
   text-decoration: underline 0.5px;
 }
@@ -58,5 +58,6 @@
 .subHeader {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  margin-left: 60px;
 }
