@@ -3,10 +3,9 @@ import { SubHeader } from "src/components/ui/sub-header";
 export function WhoWeAreSub() {
   return (
     <>
-      <header className={classes.subHeader}>
-        <h1>WHO WE ARE</h1>
-      </header>
+      <header className={classes.subHeader}></header>
       <section className={classes.section1}>
+        <h1>WHO WE ARE</h1>
         <p>
           Indigo, established in <span>2021</span> by Emmanuel Petrakis, stands
           as a bespoke real estate consulting firm capitalizing on strategic
@@ -33,7 +32,6 @@ export function WhoWeAreSub() {
           projects in Greece.
         </p>
       </section>
-      <hr />
       <section className={classes.section2}>
         <div className={classes.emmanouel}>
           <div className={classes.EmTitle}>

@@ -19,9 +19,9 @@ export function WhatWeDo() {
       <main className={classes.WhatWeDoMain}>
         <section className={classes.section1}>
           <div className={classes.subSection}>
-            <h1>Development Opportunities Sourcing </h1>
             <div className={classes.section1Container}>
               <div className={classes.paragraphWrapper}>
+                <h1>Development Opportunities Sourcing </h1>
                 <p>
                   Sourcing Development Opportunities focuses on empowering
                   investors by sourcing and selecting prime real estate
@@ -39,10 +39,10 @@ export function WhatWeDo() {
             </div>
           </div>
           <div className={classes.subSection}>
-            <h1>Development Consultancy</h1>
             <div className={classes.section2Container}>
               <img src="../public/images/projects2/handshakecrop.jpg" />
               <div className={classes.paragraphWrapperRight}>
+                <h1>Development Consultancy</h1>
                 <p>
                   Indigo offers expert guidance, insights from the knowledge
                   economy, strategic planning, informed decision-making support,
@@ -72,9 +72,9 @@ export function WhatWeDo() {
             </div>
           </div>
 
-          <h1>Development Project Management</h1>
           <div className={classes.section3Container}>
             <div className={classes.paragraphWrapper}>
+              <h1>Development Project Management</h1>
               <p>
                 Project Development Management offers customizable services
                 tailored to the specific needs and goals of clients or
@@ -95,13 +95,13 @@ export function WhatWeDo() {
         </section>
 
         <section className={classes.section2}>
-          <h1>Redevelopment – Development Projects</h1>
           <div className={classes.section4Container}>
             <img
-              className={classes.image3}
+              className={classes.img}
               src="../public/images/projects2/elinikocrop.jpg"
             />
             <div className={classes.paragraphWrapperRight}>
+              <h1>Redevelopment Development Projects</h1>
               <p>
                 Indigo's founder, an experienced investor, has led visionary
                 transformations in residential projects through previous
@@ -117,26 +117,39 @@ export function WhatWeDo() {
                 beyond, meticulously crafted for resale to showcase our
                 commitment to excellence and financial success.
               </p>
+              <Button>SAMPLE PROJECTS </Button>
             </div>
           </div>
         </section>
         <section className={classes.section3}>
           <h1>Property Management</h1>
           <div className={classes.section5Container}>
-            <p>
+            <h2>
               Experience hassle-free property management tailored for your Greek
               properties. From maintenance to rental collection and payments,
               entrust us with the care and oversight of your investments.
-            </p>
+            </h2>
           </div>
           <Button>PROPERTIES</Button>
         </section>
         <section className={classes.section4}>
-          <h1>Legal & Notarial Services</h1>
-          <img className src="../public/images/projects2/legalcrop.jpg" />
-          <h1>Residency - Golden Visa</h1>
+          <div className={classes.section6Container}>
+            <img className src="../public/images/projects2/legalcrop.jpg" />
+            <div className={classes.paragraphWrapperRight}>
+              <h1>Legal & Notarial Services</h1>
+              <p>
+                Access expert Legal & Notarial Services for your real estate
+                needs through our trusted affiliates. Streamline transactions,
+                contracts, and legal documentation with precision and
+                confidence, ensuring seamless real estate processes from start
+                to finish.
+              </p>
+            </div>
+          </div>
+
           <div className={classes.section7Container}>
             <div className={classes.paragraphWrapper}>
+              <h1>Residency - Golden Visa</h1>
               <p>
                 Unlock your path to residency in Greece with our Golden Visa
                 Consulting services. Let us guide you through the intricacies of

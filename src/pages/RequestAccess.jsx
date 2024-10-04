@@ -61,7 +61,9 @@ export function RequestAccess() {
     <>
       <div className={classes.registerPageContainer}>
         <div className={classes.hero}>
-          <Header className={headerStyles.header}></Header>
+          <Header
+            className={`${headerStyles.header} ${classes.header}`}
+          ></Header>
           <div className={classes.formcontainer}>
             <img
               className={classes.logoIndigo}

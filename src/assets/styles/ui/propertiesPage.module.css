@@ -1,5 +1,5 @@
 .pdfIcon {
-  height: 50px;
+  height: 60px;
 }
 
 .image {
@@ -11,6 +11,7 @@
   justify-content: space-evenly;
   align-items: center;
 }
+
 .iconWrapper {
   display: flex;
   justify-content: space-evenly;
