@@ -1,24 +1,4 @@
-/* .image {
-  height: 35vh;
-} */
 
-/* .container {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-} */
-
-/* .leftContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.rightContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-} */
 .section1 {
   background-color: #faefe8;
   padding-top: 4vh;
@@ -26,7 +6,7 @@
 }
 
 .section1 img {
-  max-width: 50%;
+  max-width: 40%;
   height: auto;
 }
 .section2 {
@@ -49,22 +29,18 @@
   border-top: solid #505050 1px;
   border-bottom: solid #505050 1px;
 }
-/* .section3 img {
-  max-width: 60%;
-  height: auto;
-  padding: 20px;
-} */
+
 .section4 img {
-  max-width: 50%;
+  max-width: 40%;
   height: auto;
 }
 .section1Container {
   display: flex;
-  padding: 30px;
+  /* padding: 30px; */
 }
 .section2Container {
   display: flex;
-  padding: 30px;
+  /* padding: 30px; */
 }
 .section3Container {
   display: flex;
@@ -119,49 +95,6 @@
 .subSection {
   padding: 30px;
 }
-/* .section1 img {
-  max-width: 60%;
-  height: auto;
-  padding: 20px;
-}
-
-.section1 p,
-.section2 p,
-.section3 p {
-  max-width: 50vh;
-}
-
-.section2,
-.section3 {
-  display: flex;
-  justify-content: space-evenly;
-}
-.section2 {
-  flex-wrap: wrap;
-  padding: 5vh;
-}
-
-.section3 {
-  align-items: center;
-}
-
-.section2Wrapper1,
-.section2Wrapper2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1vh;
-}
-
-.section2Wrapper2 {
-  justify-content: center;
-}
-
-.section0 img {
-  max-width: 60%;
-  height: auto;
-  padding: 20px;
-} */
 
 .WhatWeDoTitle {
   display: flex;
@@ -181,16 +114,3 @@
 .leftArrowSvg {
   height: 50px;
 }
-
-/* @media only screen and (max-width: 600px) {
-  .TheIndigoAdvantageSection {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-  .leftArrowSvg {
-    transform: rotate(90deg);
-  }
-} */

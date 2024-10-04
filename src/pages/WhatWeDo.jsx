@@ -51,6 +51,25 @@ export function WhatWeDo() {
               </div>
             </div>
           </div>
+          <div className={classes.section3Container}>
+            <div className={classes.paragraphWrapper}>
+              <h1>Development Project Management</h1>
+              <p>
+                Project Development Management offers customizable services
+                tailored to the specific needs and goals of clients or
+                investors. 
+              </p>
+              <p>
+                Clients can choose from a complete package or opt for specific
+                services, ensuring effectiveness in development management
+                proposals.
+              </p>
+            </div>
+            <img
+              className={classes.image3}
+              src="../public/images/projects2/constructioncrop.jpg"
+            />
+          </div>
           <div className={classes.subSection}>
             <h1>Market Analysis</h1>
             <div className={classes.paragraphWrapperCentre}>
@@ -67,33 +86,11 @@ export function WhatWeDo() {
               <p>
                 Leveraging this data, we offer tailored studies to potential
                 investors, guiding them through plot selection, potentialities
-                and development options. 
+                and development options.
               </p>
             </div>
-          </div>
-
-          <div className={classes.section3Container}>
-            <div className={classes.paragraphWrapper}>
-              <h1>Development Project Management</h1>
-              <p>
-                Project Development Management offers customizable services
-                tailored to the specific needs and goals of clients or
-                investors. 
-              </p>
-              <p>
-                Clients can choose from a complete package or opt for specific
-                services, ensuring effectiveness in development management
-                proposals.
-              </p>
-            </div>
-
-            <img
-              className={classes.image3}
-              src="../public/images/projects2/constructioncrop.jpg"
-            />
           </div>
         </section>
-
         <section className={classes.section2}>
           <div className={classes.section4Container}>
             <img
@@ -117,7 +114,7 @@ export function WhatWeDo() {
                 beyond, meticulously crafted for resale to showcase our
                 commitment to excellence and financial success.
               </p>
-              <Button>SAMPLE PROJECTS </Button>
+              <Button>SAMPLE PROJECTS</Button>
             </div>
           </div>
         </section>

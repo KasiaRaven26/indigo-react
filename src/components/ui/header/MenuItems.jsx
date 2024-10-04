@@ -17,14 +17,14 @@ export function MenuItems({ items }) {
               aria-expanded={dropdown ? "true" : "false"}
               onMouseOver={() => setDropdown(true)}
             >
-              <h3>{items.title}</h3>
+              {items.title}
             </button>
             {dropdown && <Dropdown submenus={items.submenu} dropdown={dropdown} />}
             {/* <Dropdown submenus={items.submenu} dropdown={dropdown} /> */}
           </>
         ) : (
           <NavLink to={items.url}>
-            <h3>{items.title}</h3>
+            {items.title}
           </NavLink>
         )}
       </li>

@@ -44,7 +44,7 @@ export function Dropdown({ submenus, dropdown, setDropdown }) {
           transition={{ duration: 1}}
         >
           <NavLink to={submenu.url}>
-            <h3>{submenu.title}</h3>
+            {submenu.title}
           </NavLink>
         </motion.li>
       ))}

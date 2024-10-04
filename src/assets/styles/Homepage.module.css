@@ -1,31 +1,76 @@
-.paragraph {
-  color: #505050;
-  /* font-size: 25px; */
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 1.5vh;
-  letter-spacing: 0.05em;
-}
-
-.leftArrowSvg {
-  height: 50px;
-}
-
-.imageContainer {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 10vh;
-}
 .header {
   position: absolute;
   top: 0;
   width: 100%;
+  color: white !important;
 }
+
+.header button {
+  color:unset;
+}
+.header a {
+  color:unset;
+}
+
+.homepageSection1 {
+  padding: 5vh;
+}
+
+.homepageSection1 p {
+
+  /* width: 50%; */
+}
+
+.homepageSection1 img {
+  max-width: 50vw;
+}
+
+.homepageSection2 {
+  padding: 5vh;
+background-color: #d9d9d9;
+}
+
+.section2Wrapper {
+display: flex;
+}
+.section2SubWrapper {
+  display: flex;
+    flex-direction: column;
+    flex: 30% 1 1;
+    align-items: flex-start;
+    text-align: start;
+}
+.section2SubWrapper img{
+  max-width: 90%;
+}
+.section2SubWrapperWrapper {
+display: flex;
+}
+
+
+.homepageSection3 {
+  padding: 5vh;
+
+}
+
+.section3SubWrapper {
+  text-align: start;
+  display: flex;
+}
+
+.homepageSection3 img{
+  width: 50vw;
+  }
+
+  .homepageSection3 p{
+    font-size: 22px;
+    }
+
+.homepageSection1, .homepageSection2, .homepageSection3 {
+  /* margin-top: 5vh;
+  margin-bottom: 5vh; */
+}
+
 
 @media only screen and (max-width: 600px) {
   .header {
