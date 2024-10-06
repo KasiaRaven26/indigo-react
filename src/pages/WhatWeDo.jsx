@@ -148,21 +148,21 @@ export function WhatWeDo() {
               </p>
             </div>
           </div>
-
-          <div className={classes.section7Container}>
-            <div className={classes.paragraphWrapper}>
-              <h1>Residency - Golden Visa</h1>
-              <p>
-                Unlock your path to residency in Greece with our Golden Visa
-                Consulting services. Let us guide you through the intricacies of
-                obtaining a residential visa, ensuring a smooth and efficient
-                process.  Contact us today for personalized assistance and
-                expert advice.
-              </p>
+          <section>
+            <div className={classes.sectionContainer}>
+              <div className={classes.paragraphWrapper}>
+                <h1>Residency - Golden Visa</h1>
+                <p>
+                  Unlock your path to residency in Greece with our Golden Visa
+                  Consulting services. Let us guide you through the intricacies
+                  of obtaining a residential visa, ensuring a smooth and
+                  efficient process.  Contact us today for personalized
+                  assistance and expert advice.
+                </p>
+              </div>
+              <img src="../public/images/projects2/goldencrop.jpg" />
             </div>
-
-            <img src="../public/images/projects2/goldencrop.jpg" />
-          </div>
+          </section>
         </section>
       </main>
       <Footer></Footer>
