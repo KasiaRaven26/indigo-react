@@ -2,56 +2,50 @@
 
 import { Footer } from "../components/ui/footer";
 import { Header } from "../components/ui//header/header";
-import { Carousel } from "src/components/carousel";
 import { SubHeader } from "src/components/ui/sub-header";
-import { image } from "src/data/projectsdata";
 import classes from "../assets/styles/whatwedo.module.css";
 import { Button } from "src/components/button";
 
 export function WhatWeDo() {
   return (
     <>
-      <Header></Header>
-      <SubHeader>
-        <span>WHAT WE DO</span>
-        <span></span>
-      </SubHeader>
+      <Header className={classes.dark}></Header>
       <main className={classes.WhatWeDoMain}>
+        <SubHeader>
+          <span>WHAT WE DO</span>
+          <span></span>
+        </SubHeader>
         <section className={classes.section1}>
-          <div className={classes.subSection}>
-            <div className={classes.section1Container}>
-              <div className={classes.paragraphWrapper}>
-                <h1>Development Opportunities Sourcing </h1>
-                <p>
-                  Sourcing Development Opportunities focuses on empowering
-                  investors by sourcing and selecting prime real estate
-                  opportunities based on specific criteria. 
-                </p>
-                <p>
-                  Through meticulous analysis, strategic planning, and seamless
-                  execution of real estate projects, Indigo aims to tailor
-                  propositions based on investor profile as portfolio, budgets,
-                  lock up period, etc. ensuring reliable project plans aligned
-                  with market demands and trends
-                </p>
-              </div>
-              <img src="../public/images/projects2/greece12.jpg" />
+          <div className={classes.sectionContainer}>
+            <div className={classes.paragraphWrapper}>
+              <h1>Development Opportunities Sourcing </h1>
+              <p>
+                Sourcing Development Opportunities focuses on empowering
+                investors by sourcing and selecting prime real estate
+                opportunities based on specific criteria. 
+              </p>
+              <p>
+                Through meticulous analysis, strategic planning, and seamless
+                execution of real estate projects, Indigo aims to tailor
+                propositions based on investor profile as portfolio, budgets,
+                lock up period, etc. ensuring reliable project plans aligned
+                with market demands and trends
+              </p>
+            </div>
+            <img src="../public/images/projects2/greece12.jpg" />
+          </div>
+          <div className={classes.sectionContainer}>
+            <img src="../public/images/projects2/handshakecrop.jpg" />
+            <div className={classes.paragraphWrapperRight}>
+              <h1>Development Consultancy</h1>
+              <p>
+                Indigo offers expert guidance, insights from the knowledge
+                economy, strategic planning, informed decision-making support,
+                and aims to be a trusted development partner.
+              </p>
             </div>
           </div>
-          <div className={classes.subSection}>
-            <div className={classes.section2Container}>
-              <img src="../public/images/projects2/handshakecrop.jpg" />
-              <div className={classes.paragraphWrapperRight}>
-                <h1>Development Consultancy</h1>
-                <p>
-                  Indigo offers expert guidance, insights from the knowledge
-                  economy, strategic planning, informed decision-making support,
-                  and aims to be a trusted development partner.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className={classes.section3Container}>
+          <div className={classes.sectionContainer}>
             <div className={classes.paragraphWrapper}>
               <h1>Development Project Management</h1>
               <p>
@@ -71,6 +65,10 @@ export function WhatWeDo() {
             />
           </div>
           <div className={classes.subSection}>
+            <img
+              className={classes.icon}
+              src="../public/images/projects2/analysis3.png"
+            />
             <h1>Market Analysis</h1>
             <div className={classes.paragraphWrapperCentre}>
               <p>
@@ -88,11 +86,12 @@ export function WhatWeDo() {
                 investors, guiding them through plot selection, potentialities
                 and development options.
               </p>
+              <Button>CONTACT US</Button>
             </div>
           </div>
         </section>
         <section className={classes.section2}>
-          <div className={classes.section4Container}>
+          <div className={classes.sectionContainer}>
             <img
               className={classes.img}
               src="../public/images/projects2/elinikocrop.jpg"
@@ -119,8 +118,14 @@ export function WhatWeDo() {
           </div>
         </section>
         <section className={classes.section3}>
+          <div className={classes.wrapper3}></div>
+          <img
+            className={classes.icon}
+            src="../public/images/projects2/design4.png"
+          />
           <h1>Property Management</h1>
-          <div className={classes.section5Container}>
+
+          <div className={classes.sectionContainer}>
             <h2>
               Experience hassle-free property management tailored for your Greek
               properties. From maintenance to rental collection and payments,
@@ -130,7 +135,7 @@ export function WhatWeDo() {
           <Button>PROPERTIES</Button>
         </section>
         <section className={classes.section4}>
-          <div className={classes.section6Container}>
+          <div className={classes.sectionContainer}>
             <img className src="../public/images/projects2/legalcrop.jpg" />
             <div className={classes.paragraphWrapperRight}>
               <h1>Legal & Notarial Services</h1>

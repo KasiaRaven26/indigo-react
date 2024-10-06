@@ -25,36 +25,50 @@ export const PropertiesPage = withAuthentication(() => {
           </div>
           <img
             className={classes.image}
-            src="../public/images/projects2/living.jpg"
+            src="../public/images/projects2/final5.jpg"
           ></img>
         </div>
-        <div>
-          <h1>Σ 14</h1>
-          <h2>VOULA</h2>
+        <div className={classes.wrapper2}>
+          <div>
+            <h1>Σ 14</h1>
+            <h2>VOULA</h2>
+            <img
+              className={classes.pdfIcon}
+              src="../public/images/projects2/icon1.svg"
+            />
+          </div>
           <img
-            className={classes.pdfIcon}
-            src="../public/images/projects2/icon1.svg"
-          />
+            className={classes.image}
+            src="../public/images/projects2/final4.jpg"
+          ></img>
         </div>
-        <img
-          className={classes.image}
-          src="../public/images/projects2/pool.jpg"
-        ></img>
-        <div>
-          <h1> β 7</h1>
-          <h2>KAVOURI</h2>
+        <div className={classes.wrapper}>
+          <div>
+            <h1> β 7</h1>
+            <h2>KAVOURI</h2>
+            <img
+              className={classes.pdfIcon}
+              src="../public/images/projects2/icon1.svg"
+            />
+          </div>
           <img
-            className={classes.pdfIcon}
-            src="../public/images/projects2/icon1.svg"
-          />
+            className={classes.image}
+            src="../public/images/projects2/entrance5.jpg"
+          ></img>
         </div>
-        <div>
-          <h1> Δ 3</h1>
-          <h2>VARKIZA</h2>
+        <div className={classes.wrapper2}>
+          <div>
+            <h1> Δ 3</h1>
+            <h2>VARKIZA</h2>
+            <img
+              className={classes.pdfIcon}
+              src="../public/images/projects2/icon1.svg"
+            />
+          </div>
           <img
-            className={classes.pdfIcon}
-            src="../public/images/projects2/icon1.svg"
-          />
+            className={classes.image}
+            src="../public/images/projects2/pool6.jpg"
+          ></img>
         </div>
       </section>
       <Footer></Footer>

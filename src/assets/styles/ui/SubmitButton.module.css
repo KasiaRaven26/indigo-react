@@ -14,8 +14,8 @@
 }
 
 .button:hover {
-  border: 2px solid #505050;
-  background-color: #48474721;
+  border: 1px solid #505050;
+  background-color: #5050504d;
 }
 
 .arrow {
