@@ -67,7 +67,7 @@ export function WhatWeDo() {
           <div className={classes.subSection}>
             <img
               className={classes.icon}
-              src="../public/images/projects2/analysis3.png"
+              src="../public/images/projects2/graph5.png"
             />
             <h1>Market Analysis</h1>
             <div className={classes.paragraphWrapperCentre}>

@@ -40,7 +40,7 @@
   align-items: center;
   justify-content: space-around;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../public//images/greeceback4.jpg");
+    url("../public//images/greecehero1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
@@ -78,7 +78,7 @@
 
 input[type="text"] {
   border: 1px solid;
-  height: 2rem;
+  height: 2.5rem;
   width: 100%;
   background-color: #d5dfe1;
   color: #505050;
@@ -87,7 +87,7 @@ input[type="text"] {
 
 input[type="email"] {
   border: 1px solid;
-  height: 2rem;
+  height: 2.5rem;
   width: 100%;
   background-color: #d5dfe1;
   color: #505050;

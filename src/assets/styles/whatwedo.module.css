@@ -7,9 +7,10 @@
   height: auto;
 }
 .icon {
-  height: 25vh;
+  height: 20vh;
   margin-bottom: 8vh;
   box-shadow: 0.5px 0.5px;
+  background-color: #5c663f14;
 }
 
 .section3 {
@@ -59,6 +60,7 @@
   line-height: 2rem;
   align-items: center;
   gap: 2vh;
+  margin-top: 10vh;
 }
 
 .paragraphWrapperCentre p {

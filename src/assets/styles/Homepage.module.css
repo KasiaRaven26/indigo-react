@@ -76,3 +76,14 @@
     height: 20vh;
   }
 }
+.paragraphRight {
+  text-align: end;
+  line-height: 4rem;
+  letter-spacing: 2px;
+}
+
+.paragraphLeft {
+  text-align: start;
+  line-height: 4rem;
+  letter-spacing: 2px;
+}

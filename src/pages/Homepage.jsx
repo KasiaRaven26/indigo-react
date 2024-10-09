@@ -20,19 +20,19 @@ export function Homepage() {
           src="../public/images/secondpicture2.jpg"
           alt=""
         />
-        <div className={classes.paragraph}>
+        <div className={classes.paragraphRight}>
           <h1>WHAT WE OFFER</h1>
-          <h2>Development Consultancy</h2>
-          <h2>Development Opportunities Sourcing</h2>
-          <h2>Development Project Managment</h2>
+          <h1>Development Consultancy</h1>
+          <h1>Development Opportunities Sourcing</h1>
+          <h1>Development Project Management</h1>
         </div>
       </section>
       <section id="section-2">
-        <div className={classes.paragraph}>
-          <h2>Market Analysis</h2>
-          <h2>Redevelopment-Development Project</h2>
-          <h2>Property Managment</h2>
-          <h2>Legal & Notarial services</h2>
+        <div className={classes.paragraphLeft}>
+          <h1>Market Analysis</h1>
+          <h1>Redevelopment-Development Project</h1>
+          <h1>Property Management</h1>
+          <h1>Legal & Notarial services</h1>
         </div>
         <img
           className="section-2-image"
