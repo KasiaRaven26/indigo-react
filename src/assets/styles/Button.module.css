@@ -13,16 +13,18 @@
 
 .wrapper {
   border: 1px solid #505050;
-  width: 200px;
-  height: 60px;
+  width: 300px;
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 5px;
+  background-color: #50505014;
 }
 
 .wrapper:hover {
   cursor: pointer;
+  background-color: #50505028;
 }
 .link {
   text-decoration: none;

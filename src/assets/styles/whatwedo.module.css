@@ -1,74 +1,44 @@
-
-.section1 {
-  background-color: #faefe8;
-  padding-top: 4vh;
-  padding-bottom: 4vh;
-}
-
 .section1 img {
   max-width: 40%;
-  height: auto;
 }
-.section2 {
-  padding-top: 4vh;
-  padding-bottom: 4vh;
-  background-color: #d9d9d9;
-}
+
 .img {
   max-width: 50%;
   height: auto;
+}
+.icon {
+  height: 20vh;
+  margin-bottom: 8vh;
+  box-shadow: 0.5px 0.5px;
+  background-color: #5c663f14;
 }
 
 .section3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 8vh;
-  background-color: #d5dfe1;
-  padding-bottom: 8vh;
-  border-top: solid #505050 1px;
-  border-bottom: solid #505050 1px;
+  letter-spacing: 2px;
+  line-height: 2rem;
 }
 
 .section4 img {
   max-width: 40%;
   height: auto;
 }
-.section1Container {
+.sectionContainer {
   display: flex;
-  /* padding: 30px; */
+  margin-top: 10vh;
+  margin-bottom: 10vh;
 }
-.section2Container {
-  display: flex;
-  /* padding: 30px; */
-}
-.section3Container {
-  display: flex;
-  padding: 30px;
-}
-.section4Container {
-  display: flex;
-  padding: 30px;
-}
-.section5Container {
-  display: flex;
-  padding: 30px;
-}
-.section7Container {
-  display: flex;
-  padding: 30px;
-}
-.section6Container {
-  display: flex;
-  padding: 30px;
-}
+
 .paragraphWrapper {
   display: flex;
   flex-direction: column;
   text-align: start;
   justify-content: space-evenly;
-  padding-left: 20px;
-  padding-right: 20px;
+  letter-spacing: 2px;
+  line-height: 2rem;
+  padding-right: 5vw;
 }
 
 .paragraphWrapperRight {
@@ -77,23 +47,24 @@
   text-align: end;
   justify-content: space-evenly;
   align-items: flex-end;
-  padding-left: 20px;
-  padding-right: 20px;
+  letter-spacing: 2px;
+  line-height: 2rem;
+  padding-left: 5vw;
 }
 
 .paragraphWrapperCentre {
   display: flex;
-  margin-top: 5vh;
-  padding-left: 20px;
-  padding-right: 20px;
+  /* margin-top: 5vh; */
   flex-direction: column;
-}
-.paragraphWrapperCentre p {
-  flex: 33% 1 1;
+  letter-spacing: 2px;
+  line-height: 2rem;
+  align-items: center;
+  gap: 2vh;
+  margin-top: 10vh;
 }
 
-.subSection {
-  padding: 30px;
+.paragraphWrapperCentre p {
+  flex: 33% 1 1;
 }
 
 .WhatWeDoTitle {
@@ -113,4 +84,14 @@
 
 .leftArrowSvg {
   height: 50px;
+}
+.dark {
+  color: #505050 !important;
+}
+
+.dark button {
+  color: unset;
+}
+.dark a {
+  color: unset;
 }

@@ -3,13 +3,14 @@
   top: 0;
   width: 100%;
   color: white !important;
+  font-size: 20px;
 }
 
 .header button {
-  color:unset;
+  color: unset;
 }
 .header a {
-  color:unset;
+  color: unset;
 }
 
 .homepageSection1 {
@@ -17,7 +18,6 @@
 }
 
 .homepageSection1 p {
-
   /* width: 50%; */
 }
 
@@ -27,30 +27,28 @@
 
 .homepageSection2 {
   padding: 5vh;
-background-color: #d9d9d9;
+  background-color: #d9d9d9;
 }
 
 .section2Wrapper {
-display: flex;
+  display: flex;
 }
 .section2SubWrapper {
   display: flex;
-    flex-direction: column;
-    flex: 30% 1 1;
-    align-items: flex-start;
-    text-align: start;
+  flex-direction: column;
+  flex: 30% 1 1;
+  align-items: flex-start;
+  text-align: start;
 }
-.section2SubWrapper img{
+.section2SubWrapper img {
   max-width: 90%;
 }
 .section2SubWrapperWrapper {
-display: flex;
+  display: flex;
 }
-
 
 .homepageSection3 {
   padding: 5vh;
-
 }
 
 .section3SubWrapper {
@@ -58,22 +56,34 @@ display: flex;
   display: flex;
 }
 
-.homepageSection3 img{
+.homepageSection3 img {
   width: 50vw;
-  }
+}
 
-  .homepageSection3 p{
-    font-size: 22px;
-    }
+.homepageSection3 p {
+  font-size: 22px;
+}
 
-.homepageSection1, .homepageSection2, .homepageSection3 {
+.homepageSection1,
+.homepageSection2,
+.homepageSection3 {
   /* margin-top: 5vh;
   margin-bottom: 5vh; */
 }
-
 
 @media only screen and (max-width: 600px) {
   .header {
     height: 20vh;
   }
+}
+.paragraphRight {
+  text-align: end;
+  line-height: 4rem;
+  letter-spacing: 2px;
+}
+
+.paragraphLeft {
+  text-align: start;
+  line-height: 4rem;
+  letter-spacing: 2px;
 }
