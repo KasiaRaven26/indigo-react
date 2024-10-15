@@ -4,6 +4,7 @@ import { Header } from "../components/ui/header/header";
 import { Footer } from "../components/ui/footer";
 import { Overlay } from "../components/ui/overlay";
 import classes from "../assets/styles/Homepage.module.css";
+import { Button } from "src/components/button";
 
 export function Homepage() {
   return (
@@ -39,6 +40,17 @@ export function Homepage() {
           src="../public/images/thirdpicture.jpg"
           alt=""
         />
+      </section>
+      <section id="section-3">
+        <img
+          className="section-3-image"
+          src="../public/images/couple.jpg"
+          alt=""
+        />
+        <div className={classes.paragraphRight}>
+          <h1>YOUR GATEWAY TO SUCCESSFUL REAL ESTATE INVESTMENTS IN GREECE</h1>
+          <Button>LET'S TALK</Button>
+        </div>
       </section>
       <Footer></Footer>
     </>

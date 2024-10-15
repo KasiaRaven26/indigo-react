@@ -11,6 +11,16 @@ export const PropertiesPage = withAuthentication(() => {
     <>
       <Header></Header>
       <h1>Properties for Sale</h1>
+      <div className={classes.subheaderproperties}>
+        <h2>
+          Welcome to the luxurious selection of properties curated by Indigo
+          Consulting. Explore ongoing developments meticulously managed by our
+          consultancy services, tailored for discerning investors. Discover
+          carefully selected future projects endorsed by investors in
+          collaboration with Indigo Consulting from developers not directly
+          affiliated with our consultancy.
+        </h2>
+      </div>
       <section>
         <div className={classes.wrapper}>
           <div className={classes.alegreya}>

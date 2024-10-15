@@ -61,11 +61,11 @@ export function WhatWeDo() {
             </div>
             <img
               className={classes.image3}
-              src="../public/images/projects2/constructioncrop.jpg"
+              src="../public/images/projects2/constructionfin.jpg"
             />
           </div>
           <div className={classes.sectionContainer}>
-            <img src="../public/images/projects2/analysis2.jpg" />
+            <img src="../public/images/projects2/analysis1.jpg" />
             <div className={classes.paragraphWrapperRight}>
               <h1>Market Analysis</h1>
               <p>
@@ -95,7 +95,7 @@ export function WhatWeDo() {
           <div className={classes.sectionContainer}>
             <img
               className={classes.img}
-              src="../public/images/projects2/eliniko3.jpg"
+              src="../public/images/projects2/elinikofin5.jpg"
             />
             <div className={classes.paragraphWrapperRight}>
               <h1>Redevelopment Development Projects</h1>
@@ -137,7 +137,7 @@ export function WhatWeDo() {
         </section>
         <section className={classes.section4}>
           <div className={classes.sectionContainer}>
-            <img className src="../public/images/projects2/legalcrop.jpg" />
+            <img className src="../public/images/projects2/legalfin.jpg" />
             <div className={classes.paragraphWrapperRight}>
               <h1>Legal & Notarial Services</h1>
               <p>
@@ -161,7 +161,7 @@ export function WhatWeDo() {
                   assistance and expert advice.
                 </p>
               </div>
-              <img src="../public/images/projects2/goldencrop.jpg" />
+              <img src="../public/images/projects2/goldenfin.jpg" />
             </div>
           </section>
         </section>

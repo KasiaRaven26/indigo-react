@@ -54,7 +54,7 @@ export function WhoWeArePage() {
             <div className={classes.sectionContainer}>
               <img
                 className={classes.image}
-                src="../public/images/whoweare/eman3.jpg"
+                src="../public/images/whoweare/emanfin.jpg"
                 alt=""
               />
               <div className={classes.paragraphWrapperRight}>
