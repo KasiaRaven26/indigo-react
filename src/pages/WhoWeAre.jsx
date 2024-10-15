@@ -54,7 +54,7 @@ export function WhoWeArePage() {
             <div className={classes.sectionContainer}>
               <img
                 className={classes.image}
-                src="../public/images/whoweare/emanfinal.jpg"
+                src="../public/images/whoweare/eman3.jpg"
                 alt=""
               />
               <div className={classes.paragraphWrapperRight}>
@@ -70,9 +70,9 @@ export function WhoWeArePage() {
                   encompass real estate.
                 </p>
                 <p>
-                  Having served as CEO in over <span>10 companies</span> within
-                  this quarter-century timeframe I bring a wealth of knowledge
-                  and experience to the table.
+                  Having served as <span> CEO </span>within this quarter-century
+                  timeframe I bring a wealth of knowledge and experience to the
+                  table.
                 </p>
                 <p>
                   With <span>20 years</span> of accumulated local knowledge and

@@ -14,7 +14,7 @@ export const PropertiesPage = withAuthentication(() => {
       <section>
         <div className={classes.wrapper}>
           <div className={classes.alegreya}>
-            <h2>Φ 19</h2>
+            <h2>Φ </h2>
             <h3>GLYFADA</h3>
             <div className={classes.iconWrapper}>
               <img
@@ -30,7 +30,7 @@ export const PropertiesPage = withAuthentication(() => {
         </div>
         <div className={classes.wrapper2}>
           <div className={classes.alegreya}>
-            <h2>Σ 14</h2>
+            <h2>Σ </h2>
             <h3>VOULA</h3>
             <img
               className={classes.pdfIcon}
@@ -44,7 +44,7 @@ export const PropertiesPage = withAuthentication(() => {
         </div>
         <div className={classes.wrapper}>
           <div className={classes.alegreya}>
-            <h2> β 7</h2>
+            <h2> β </h2>
             <h3>KAVOURI</h3>
             <img
               className={classes.pdfIcon}
@@ -58,7 +58,7 @@ export const PropertiesPage = withAuthentication(() => {
         </div>
         <div className={classes.wrapper2}>
           <div className={classes.alegreya}>
-            <h2> Δ 3</h2>
+            <h2> Δ </h2>
             <h3>VARKIZA</h3>
             <img
               className={classes.pdfIcon}

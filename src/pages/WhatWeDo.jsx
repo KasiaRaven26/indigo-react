@@ -64,13 +64,10 @@ export function WhatWeDo() {
               src="../public/images/projects2/constructioncrop.jpg"
             />
           </div>
-          <div className={classes.subSection}>
-            <img
-              className={classes.icon}
-              src="../public/images/projects2/graph5.png"
-            />
-            <h1>Market Analysis</h1>
-            <div className={classes.paragraphWrapperCentre}>
+          <div className={classes.sectionContainer}>
+            <img src="../public/images/projects2/analysis2.jpg" />
+            <div className={classes.paragraphWrapperRight}>
+              <h1>Market Analysis</h1>
               <p>
                 Integrated with our consultancy and project management services,
                 we provide comprehensive support from inception to project
@@ -89,12 +86,16 @@ export function WhatWeDo() {
               <Button>CONTACT US</Button>
             </div>
           </div>
+
+          <div className={classes.subSection}>
+            <div className={classes.paragraphWrapperCentre}></div>
+          </div>
         </section>
         <section className={classes.section2}>
           <div className={classes.sectionContainer}>
             <img
               className={classes.img}
-              src="../public/images/projects2/elinikocrop.jpg"
+              src="../public/images/projects2/eliniko3.jpg"
             />
             <div className={classes.paragraphWrapperRight}>
               <h1>Redevelopment Development Projects</h1>

@@ -2,7 +2,7 @@
 
 export const menuItemsData = [
   {
-    title: "About us",
+    title: "ABOUT US",
     url: "/about-us",
     submenu: [
       {
@@ -16,7 +16,7 @@ export const menuItemsData = [
     ],
   },
   {
-    title: "Services",
+    title: "SERVICES",
     url: "/services",
     submenu: [
       {
@@ -30,11 +30,11 @@ export const menuItemsData = [
     ],
   },
   {
-    title: "Contact us",
+    title: " CONTACT US",
     url: "/contact",
   },
   {
-    title: "Account",
+    title: "ACCOUNT",
     url: "/contact",
     submenu: [
       {
