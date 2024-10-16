@@ -12,18 +12,18 @@ export const PropertiesPage = withAuthentication(() => {
       <Header></Header>
       <h1>Properties for Sale</h1>
       <div className={classes.subheaderproperties}>
-        <h2>
+        <p>
           Welcome to the luxurious selection of properties curated by Indigo
           Consulting. Explore ongoing developments meticulously managed by our
           consultancy services, tailored for discerning investors. Discover
           carefully selected future projects endorsed by investors in
           collaboration with Indigo Consulting from developers not directly
           affiliated with our consultancy.
-        </h2>
+        </p>
       </div>
       <section>
         <div className={classes.wrapper}>
-          <div className={classes.alegreya}>
+          <div className={classes.josefin}>
             <h2>Φ </h2>
             <h3>GLYFADA</h3>
             <div className={classes.iconWrapper}>
@@ -39,7 +39,7 @@ export const PropertiesPage = withAuthentication(() => {
           ></img>
         </div>
         <div className={classes.wrapper2}>
-          <div className={classes.alegreya}>
+          <div className={classes.josefin}>
             <h2>Σ </h2>
             <h3>VOULA</h3>
             <img
@@ -53,7 +53,7 @@ export const PropertiesPage = withAuthentication(() => {
           ></img>
         </div>
         <div className={classes.wrapper}>
-          <div className={classes.alegreya}>
+          <div className={classes.josefin}>
             <h2> β </h2>
             <h3>KAVOURI</h3>
             <img
@@ -67,7 +67,7 @@ export const PropertiesPage = withAuthentication(() => {
           ></img>
         </div>
         <div className={classes.wrapper2}>
-          <div className={classes.alegreya}>
+          <div className={classes.josefin}>
             <h2> Δ </h2>
             <h3>VARKIZA</h3>
             <img

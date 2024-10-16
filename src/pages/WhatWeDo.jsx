@@ -93,10 +93,7 @@ export function WhatWeDo() {
         </section>
         <section className={classes.section2}>
           <div className={classes.sectionContainer}>
-            <img
-              className={classes.img}
-              src="../public/images/projects2/elinikofin5.jpg"
-            />
+            <img src="../public/images/projects2/elinikofin5.jpg" />
             <div className={classes.paragraphWrapperRight}>
               <h1>Redevelopment Development Projects</h1>
               <p>
@@ -127,7 +124,7 @@ export function WhatWeDo() {
           <h1>Property Management</h1>
 
           <div className={classes.sectionContainer}>
-            <h2>
+            <h2 className={classes.subHeader}>
               Experience hassle-free property management tailored for your Greek
               properties. From maintenance to rental collection and payments,
               entrust us with the care and oversight of your investments.

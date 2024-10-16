@@ -59,7 +59,7 @@ export function WhoWeArePage() {
               />
               <div className={classes.paragraphWrapperRight}>
                 <h1>EMMANUEL PETRAKIS</h1>
-                <h2>Director and founder</h2>
+                <h2 className={classes.thinerHeader}>Director and founder</h2>
                 <p>
                   With more than <span>25 years</span> of extensive local
                   expertise spanning diverse business sectors I have cultivated
