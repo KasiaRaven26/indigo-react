@@ -23,7 +23,19 @@ export function Homepage() {
         />
         <div className={classes.paragraphRight}>
           <h1>WHAT WE OFFER</h1>
-          <h1>Development Consultancy</h1>
+
+          <a
+            className={classes.arrowLink}
+            href="/what-we-do#development-consultancy"
+          >
+            Development Consultancy
+          </a>
+          {/* <Link
+            className={classes.arrowLink}
+            to={"/what-we-do#development-consultancy"}
+          >
+            Development Consultancy
+          </Link> */}
           <h1>Development Opportunities Sourcing</h1>
           <h1>Development Project Management</h1>
         </div>

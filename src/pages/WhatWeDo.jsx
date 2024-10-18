@@ -37,7 +37,7 @@ export function WhatWeDo() {
           <div className={classes.sectionContainer}>
             <img src="../public/images/projects2/handshakecrop.jpg" />
             <div className={classes.paragraphWrapperRight}>
-              <h1>Development Consultancy</h1>
+              <h1 id="development-consultancy">Development Consultancy</h1>
               <p>
                 Indigo offers expert guidance, insights from the knowledge
                 economy, strategic planning, informed decision-making support,
