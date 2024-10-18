@@ -23,29 +23,63 @@ export function Homepage() {
         />
         <div className={classes.paragraphRight}>
           <h1>WHAT WE OFFER</h1>
-
-          <a
-            className={classes.arrowLink}
-            href="/what-we-do#development-consultancy"
-          >
-            Development Consultancy
-          </a>
-          {/* <Link
+          <div className={classes.links}>
+            <a
+              className={classes.arrowLink}
+              href="/what-we-do#development-consultancy"
+            >
+              Development Consultancy
+            </a>
+            {/* <Link
             className={classes.arrowLink}
             to={"/what-we-do#development-consultancy"}
           >
             Development Consultancy
           </Link> */}
-          <h1>Development Opportunities Sourcing</h1>
-          <h1>Development Project Management</h1>
+
+            <a
+              className={classes.arrowLink}
+              href="/what-we-do#development-consultancy"
+            >
+              Development Opportunities Sourcing
+            </a>
+            <a
+              className={classes.arrowLink}
+              href="/what-we-do#development-consultancy"
+            >
+              Development Project Management
+            </a>
+          </div>
         </div>
       </section>
       <section id="section-2">
         <div className={classes.paragraphLeft}>
-          <h1>Market Analysis</h1>
-          <h1>Redevelopment-Development Project</h1>
-          <h1>Property Management</h1>
-          <h1>Legal & Notarial services</h1>
+          <div className={classes.links}>
+            <a
+              className={classes.arrowLink}
+              href="/what-we-do#development-consultancy"
+            >
+              Market Analysis
+            </a>
+            <a
+              className={classes.arrowLink}
+              href="/what-we-do#development-consultancy"
+            >
+              Redevelopment-Development Project
+            </a>
+            <a
+              className={classes.arrowLink}
+              href="/what-we-do#development-consultancy"
+            >
+              Property Management
+            </a>
+            <a
+              className={classes.arrowLink}
+              href="/what-we-do#development-consultancy"
+            >
+              Legal & Notarial Services
+            </a>
+          </div>
         </div>
         <img
           className="section-2-image"

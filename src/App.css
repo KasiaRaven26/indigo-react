@@ -32,6 +32,8 @@
   align-items: center;
   justify-content: space-evenly;
   height: 65vh;
+  padding-top: 8vh;
+  padding-bottom: 8vh;
 }
 
 .hero {

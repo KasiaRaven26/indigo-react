@@ -80,6 +80,8 @@
   text-align: end;
   line-height: 4rem;
   letter-spacing: 2px;
+  text-align: center;
+  max-width: 800px;
 }
 
 .paragraphLeft {
@@ -102,4 +104,12 @@
 }
 .arrowLink:hover:after {
   transform: translateX(10px);
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+}
+.links a {
+  margin: 1rem 0;
 }
