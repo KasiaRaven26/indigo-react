@@ -18,6 +18,11 @@ export function Contact() {
             Alternatively, you can find our contact details listed below if you
             prefer to reach out to us directly.
           </p>
+
+          <div className={classes.contactHeader}>
+            <h1>CONTACT</h1>
+            <h1>LET'S TALK</h1>
+          </div>
         </section>
         <div className={classes.contactForm}>
           <form>

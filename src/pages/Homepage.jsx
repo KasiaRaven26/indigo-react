@@ -89,8 +89,8 @@ export function Homepage() {
       </section>
       <section id="section-3">
         <img
-          className="section-3-image"
-          src="../public/images/couple.jpg"
+          className="section-3-hero"
+          src="../public/images/posh.jpg"
           alt=""
         />
         <div className={classes.paragraphRight}>

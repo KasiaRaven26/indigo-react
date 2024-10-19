@@ -66,6 +66,17 @@
   transform: translate(-50%, -50%);
 }
 
+.section-3-hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../public//images/couple.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+}
 .section-1-image {
   width: 30vw;
 }

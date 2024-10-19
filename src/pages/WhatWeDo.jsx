@@ -17,7 +17,8 @@ export function WhatWeDo() {
         </SubHeader>
         <section className={classes.section1}>
           <div className={classes.sectionContainer}>
-            <div className={classes.paragraphWrapper}>
+            <img src="../public/images/projects2/greece12.jpg" />
+            <div className={classes.paragraphWrapperRight}>
               <h1>Development Opportunities Sourcing </h1>
               <p>
                 Sourcing Development Opportunities focuses on empowering
@@ -32,8 +33,8 @@ export function WhatWeDo() {
                 with market demands and trends
               </p>
             </div>
-            <img src="../public/images/projects2/greece12.jpg" />
           </div>
+          <div className={classes.section2}></div>
           <div className={classes.sectionContainer}>
             <img src="../public/images/projects2/handshakecrop.jpg" />
             <div className={classes.paragraphWrapperRight}>
@@ -46,7 +47,11 @@ export function WhatWeDo() {
             </div>
           </div>
           <div className={classes.sectionContainer}>
-            <div className={classes.paragraphWrapper}>
+            <img
+              className={classes.image3}
+              src="../public/images/projects2/constructionfin.jpg"
+            />
+            <div className={classes.paragraphWrapperRight}>
               <h1>Development Project Management</h1>
               <p>
                 Project Development Management offers customizable services
@@ -59,10 +64,6 @@ export function WhatWeDo() {
                 proposals.
               </p>
             </div>
-            <img
-              className={classes.image3}
-              src="../public/images/projects2/constructionfin.jpg"
-            />
           </div>
           <div className={classes.sectionContainer}>
             <img src="../public/images/projects2/analysis1.jpg" />
@@ -146,9 +147,10 @@ export function WhatWeDo() {
               </p>
             </div>
           </div>
-          <section>
+          <section className={classes.section5}>
             <div className={classes.sectionContainer}>
-              <div className={classes.paragraphWrapper}>
+              <img src="../public/images/projects2/goldenfin.jpg" />
+              <div className={classes.paragraphWrapperRight}>
                 <h1>Residency - Golden Visa</h1>
                 <p>
                   Unlock your path to residency in Greece with our Golden Visa
@@ -158,7 +160,6 @@ export function WhatWeDo() {
                   assistance and expert advice.
                 </p>
               </div>
-              <img src="../public/images/projects2/goldenfin.jpg" />
             </div>
           </section>
         </section>

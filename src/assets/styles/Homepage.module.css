@@ -80,7 +80,7 @@
   text-align: end;
   line-height: 4rem;
   letter-spacing: 2px;
-  text-align: center;
+  text-align: right;
   max-width: 800px;
 }
 
@@ -103,7 +103,7 @@
   display: inline-block;
 }
 .arrowLink:hover:after {
-  transform: translateX(10px);
+  transform: translateX(10px) translateY(-5px);
 }
 
 .links {

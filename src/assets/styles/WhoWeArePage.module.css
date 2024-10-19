@@ -69,6 +69,7 @@
   letter-spacing: 2px;
   line-height: 2rem;
   padding-right: 5vw;
+  max-width: 1000px;
 }
 
 .paragraphWrapperRight {
@@ -80,6 +81,7 @@
   letter-spacing: 2px;
   line-height: 2rem;
   padding-left: 5vw;
+  max-width: 1000px;
 }
 .thinerHeader {
   font-weight: 400;

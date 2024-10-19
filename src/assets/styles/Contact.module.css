@@ -48,3 +48,8 @@ input[type="email"] {
   letter-spacing: 0.08em;
   gap: 2vh;
 }
+.contactHeader {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5vh;
+}
