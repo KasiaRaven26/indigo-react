@@ -18,28 +18,30 @@ export function Contact() {
             Alternatively, you can find our contact details listed below if you
             prefer to reach out to us directly.
           </p>
-
-          <div className={classes.contactHeader}>
-            <h1>CONTACT</h1>
-            <h1>LET'S TALK</h1>
-          </div>
         </section>
-        <div className={classes.contactForm}>
-          <form>
-            <label>
-              <input type="text" value="Name:" />
-            </label>
-            <label>
-              <input type="text" value="Email:" />
-            </label>
-            <label>
-              <input type="text" value="Contact Number:" />
-            </label>
-            <label>
-              <input type="text" value="Message:" />
-            </label>
-            <Button type="submit">SUBMIT</Button>
-          </form>
+
+        <div className={classes.contactColumns}>
+          <div className={classes.contactForm}>
+            <div className={classes.contactHeader}>
+              <h1>CONTACT</h1>
+            </div>
+
+            <form>
+              <label>
+                <input type="text" value="Name:" />
+              </label>
+              <label>
+                <input type="text" value="Email:" />
+              </label>
+              <label>
+                <input type="text" value="Contact Number:" />
+              </label>
+              <label>
+                <input type="text" value="Message:" />
+              </label>
+              <Button type="submit">SUBMIT</Button>
+            </form>
+          </div>
           <div className={classes.contactSection}>
             <h2>T:+30 210 12 34 567</h2>
             <h2>E:INFO@INDIGO.GR</h2>

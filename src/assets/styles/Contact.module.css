@@ -2,6 +2,8 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-direction: column;
+  border-right: 1px solid;
 }
 
 .contactForm form {
@@ -26,9 +28,6 @@ input[type="email"] {
   border-radius: 4px;
 } */
 
-.contact {
-  height: 100vh;
-}
 #contactMain {
   height: 80vh;
   display: flex;
@@ -43,7 +42,6 @@ input[type="email"] {
   font-size: 25px;
   text-decoration: underline 0.5px solid #505050;
   display: flex;
-  align-items: flex-start;
   flex-direction: column;
   letter-spacing: 0.08em;
   gap: 2vh;
@@ -51,5 +49,11 @@ input[type="email"] {
 .contactHeader {
   display: flex;
   justify-content: space-evenly;
-  padding: 5vh;
+}
+.contactColumns {
+  display: flex;
+  align-items: center;
+}
+.contactColumns > div {
+  width: 50%;
 }
