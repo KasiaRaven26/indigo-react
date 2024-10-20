@@ -20,88 +20,101 @@ export function Homepage() {
           </div>
         </div>
       </ScrollAnimation>
+
       <section id="section-1">
         <img
           className="section-1-image"
           src="../public/images/secondpicture2.jpg"
           alt=""
         />
-        <div className={classes.paragraphRight}>
-          <h1>WHAT WE OFFER</h1>
-          <div className={classes.links}>
-            <a
-              className={classes.arrowLink}
-              href="/what-we-do#development-consultancy"
-            >
-              Development Consultancy
-            </a>
-            {/* <Link
+
+        <ScrollAnimation delay={500} animateIn="fadeIn">
+          <div className={classes.paragraphRight}>
+            <h1>WHAT WE OFFER</h1>
+            <div className={classes.links}>
+              <a
+                className={classes.arrowLink}
+                href="/what-we-do#development-consultancy"
+              >
+                Development Consultancy
+              </a>
+              {/* <Link
             className={classes.arrowLink}
             to={"/what-we-do#development-consultancy"}
           >
             Development Consultancy
           </Link> */}
 
-            <a
-              className={classes.arrowLink}
-              href="/what-we-do#Development-Opportunities-Sourcing"
-            >
-              Development Opportunities Sourcing
-            </a>
-            <a
-              className={classes.arrowLink}
-              href="/what-we-do#Development-Project-Management"
-            >
-              Development Project Management
-            </a>
+              <a
+                className={classes.arrowLink}
+                href="/what-we-do#Development-Opportunities-Sourcing"
+              >
+                Development Opportunities Sourcing
+              </a>
+              <a
+                className={classes.arrowLink}
+                href="/what-we-do#Development-Project-Management"
+              >
+                Development Project Management
+              </a>
+            </div>
           </div>
-        </div>
+        </ScrollAnimation>
       </section>
+
       <section id="section-2">
-        <div className={classes.paragraphLeft}>
-          <div className={classes.links}>
-            <a
-              className={classes.arrowLink}
-              href="/what-we-do#development-consultancy"
-            >
-              Market Analysis
-            </a>
-            <a
-              className={classes.arrowLink}
-              href="/what-we-do#RedevelopmentDevelopment-Project"
-            >
-              Redevelopment-Development Project
-            </a>
-            <a
-              className={classes.arrowLink}
-              href="/what-we-do#Property-Management"
-            >
-              Property Management
-            </a>
-            <a
-              className={classes.arrowLink}
-              href="/what-we-do#Legal&Notarial-Services"
-            >
-              Legal & Notarial Services
-            </a>
+        <ScrollAnimation delay={500} animateIn="fadeIn">
+          <div className={classes.paragraphLeft}>
+            <div className={classes.links}>
+              <a
+                className={classes.arrowLink}
+                href="/what-we-do#development-consultancy"
+              >
+                Market Analysis
+              </a>
+              <a
+                className={classes.arrowLink}
+                href="/what-we-do#RedevelopmentDevelopment-Project"
+              >
+                Redevelopment-Development Project
+              </a>
+              <a
+                className={classes.arrowLink}
+                href="/what-we-do#Property-Management"
+              >
+                Property Management
+              </a>
+              <a
+                className={classes.arrowLink}
+                href="/what-we-do#Legal&Notarial-Services"
+              >
+                Legal & Notarial Services
+              </a>
+            </div>
           </div>
-        </div>
+        </ScrollAnimation>
+
         <img
           className="section-2-image"
           src="../public/images/thirdpicture.jpg"
           alt=""
         />
       </section>
-      <section id="section-3">
-        <ScrollAnimation delay={600} animateIn="fadeIn">
-          <img
-            className="section-3-hero"
-            src="../public/images/posh.jpg"
-            alt=""
-          />
+      <div>
+        <ScrollAnimation delay={500} animateIn="fadeIn">
+          <h1 className={classes.headerHome}>
+            YOUR GATEWAY TO SUCCESSFUL REAL ESTATE INVESTMENTS IN GREECE
+          </h1>
         </ScrollAnimation>
+      </div>
+      <section id="section-3">
+        <img
+          className="section-3-hero"
+          src="../public/images/posh.jpg"
+          alt=""
+        />
+
         <div className={classes.paragraphCenter}>
-          <h1>YOUR GATEWAY TO SUCCESSFUL REAL ESTATE INVESTMENTS IN GREECE</h1>
           <Button>LET'S TALK</Button>
         </div>
       </section>

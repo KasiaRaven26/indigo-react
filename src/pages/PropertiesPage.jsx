@@ -21,6 +21,7 @@ export const PropertiesPage = withAuthentication(() => {
           affiliated with our consultancy.
         </p>
       </div>
+
       <section>
         <div className={classes.wrapper}>
           <div className={classes.josefin}>
