@@ -9,7 +9,7 @@ export function Contact() {
     <div className={classes.contact}>
       <Header></Header>
       <main id={classes.contactMain}>
-        <section>
+        <section className={classes.section1}>
           <p>
             Feel free to fill out the contact form below and one of our team
             members will get back to you as soon as possible.
@@ -43,6 +43,10 @@ export function Contact() {
             </form>
           </div>
           <div className={classes.contactSection}>
+            <div className={classes.letsTalk}>
+              <h1>LET'S TALK</h1>
+            </div>
+
             <h2>T:+30 210 12 34 567</h2>
             <h2>E:INFO@INDIGO.GR</h2>
           </div>

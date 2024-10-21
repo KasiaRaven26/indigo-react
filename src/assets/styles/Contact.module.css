@@ -11,7 +11,7 @@
   flex-direction: column;
   gap: 50px;
   margin-top: 4vh;
-  margin-bottom: 4vh;
+  width: 50%;
 }
 /* input[type="text"] {
   border: 1px solid;
@@ -39,12 +39,10 @@ input[type="email"] {
   font-size: 20px;
 }
 .contactSection {
-  font-size: 25px;
-  text-decoration: underline 0.5px solid #505050;
   display: flex;
   flex-direction: column;
   letter-spacing: 0.08em;
-  gap: 2vh;
+  gap: 4vh;
 }
 .contactHeader {
   display: flex;
@@ -52,8 +50,18 @@ input[type="email"] {
 }
 .contactColumns {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 .contactColumns > div {
   width: 50%;
+}
+.letsTalk {
+  display: flex;
+
+  justify-content: space-evenly;
+}
+.section1 {
+  max-width: 600px;
+  display: contents;
+  padding-bottom: 10vh;
 }
